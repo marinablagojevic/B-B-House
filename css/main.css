@@ -141,13 +141,18 @@ section {
     padding-bottom: 60px;
 }
 
-.cta {
+.cta, .book-button {
     color: white;
     font-size: 14px;
     font-weight: 700;
     padding: 20px 15px;
     background-color:  #ee7463;
     border: none;  
+}
+
+.book-button {
+    margin-bottom: 40px;
+    padding: 15px 20px; 
 }
 
 /* Header */
@@ -161,7 +166,7 @@ section {
 }
 .text p {
     color: white;
-    line-height: 20px;
+    line-height: 22px;
 }
 
 .header {
@@ -185,7 +190,7 @@ h1 {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .text img {
@@ -193,7 +198,7 @@ h1 {
 }
 
 .header {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.0)), url(../img/1.jpg);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url(../img/1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -208,6 +213,7 @@ header nav {
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 99;
     /*display: table;
     position: fixed;
     top: 0;
@@ -223,7 +229,7 @@ header nav {
     display: block;
     text-align: center;
     margin: 0;
-    padding: 60px 0 0 0;
+    padding: 81px 0 0 0;
 
     /*display: table-cell;
     vertical-align: middle;
@@ -253,7 +259,6 @@ header nav {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    margin: -10px auto;
     padding-left: 0;
     line-height: 18px;
     font-size: 12px;
@@ -308,16 +313,44 @@ nav .close span:nth-child(2) {
 
 .burger span:nth-child(1) {
     margin-top: 0;
+} /*ZASTO JE POZADINA BURGERA SVETLA, ODAKLE TAJ SVADRAT?*/
+
+/* rooms */
+
+.rooms p {
+    line-height: 22px;
+}
+
+.rooms p span {
+    font-weight: 700;
+}
+
+.first-room {
+    position: relative;
+}
+
+.wrapper a {
+    color: white;
+    font-weight: 400;
+    position: absolute;
+    bottom: 44%;
+    left: 65%;
+} /*KAKO DA POZICIONIRAM CHECK GALLERY LINK NA SLIKU SOBE DOLE DESNO?*/
+
+.wrapper h3 {
+    margin: 30px 0 5px 0;
+}
+
+.wrapper h4 {
+    margin: 20px 0;
+}
+.wrapper p {
+    margin: 10px 0;
 }
 
 
 
-
-
-
-
-
-@media only screen and (min-width: 1024px) {
+/*@media only screen and (min-width: 1024px) {
 
 header {
     padding: 15px 0 10px;
@@ -405,10 +438,10 @@ header p, h1 {
 
 .text p span {
     font-weight: 700;
-}
+}*/
 
 /**rooms**/
-
+/*
 h2 {
     text-align: center;
 }
@@ -419,13 +452,11 @@ section p {
     margin: 0 auto;
     padding: 20px 0 0 0;
     line-height: 24px;
+}
 
 }
 
-
-}
-
-
+*/
 
 
 /* ==========================================================================
