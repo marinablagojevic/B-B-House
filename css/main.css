@@ -97,7 +97,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* Global styles */
+/* GLOBAL styles */
 
 * {
     box-sizing: border-box;
@@ -116,13 +116,13 @@ a {
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 700;
     color: #172429;
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
 }
 
@@ -137,8 +137,9 @@ h4 {
 }
 
 section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    margin-top: 40px;
+    /*padding-top: 60px;
+    padding-bottom: 60px;*/
 }
 
 .cta, .book-button {
@@ -150,12 +151,16 @@ section {
     border: none;  
 }
 
+.cta:hover, .book-button:hover {
+    background-color: #c44d3d;
+}
+
 .book-button {
-    margin-bottom: 40px;
+   margin-bottom: 20px;
     padding: 15px 20px; 
 }
 
-/* Header */
+/* HEADER */
 
 .header, section {
     padding: 0 15px;
@@ -203,7 +208,7 @@ h1 {
     background-repeat: no-repeat;
 }
 
-/* navigation */
+/* NAVIGATION */
 
 header nav {
     display: none;
@@ -313,9 +318,9 @@ nav .close span:nth-child(2) {
 
 .burger span:nth-child(1) {
     margin-top: 0;
-} /*ZASTO JE POZADINA BURGERA SVETLA, ODAKLE TAJ SVADRAT?*/
+} /*ZASTO JE POZADINA BURGERA SVETLA, ODAKLE TAJ kVADRAT?*/
 
-/* rooms */
+/* ROOMS */
 
 .rooms p {
     line-height: 22px;
@@ -325,30 +330,67 @@ nav .close span:nth-child(2) {
     font-weight: 700;
 }
 
-.first-room {
+.room {
     position: relative;
 }
 
 .wrapper a {
-    color: white;
-    font-weight: 400;
-    position: absolute;
-    bottom: 44%;
-    left: 65%;
+    color: #494949;
+    font-weight: 700;
+    padding: 5px 0;
+    border-bottom: 1px solid #494949;
+    position: inherit;
+    top: 8px;
 } /*KAKO DA POZICIONIRAM CHECK GALLERY LINK NA SLIKU SOBE DOLE DESNO?*/
 
 .wrapper h3 {
-    margin: 30px 0 5px 0;
+    margin: 30px 0 10px 0;
 }
 
 .wrapper h4 {
     margin: 20px 0;
 }
+
 .wrapper p {
-    margin: 10px 0;
+    margin: 20px 0 10px 0;
 }
 
+.wrapper img {
+    border: 5px solid white;
+    box-shadow: -1px -1px 33px -7px rgba(0,0,0,0.2);
+}
 
+/* GALLERY */
+
+.gallery {
+    padding: 0;
+}
+
+.gallery button {
+    color: #494949;
+    font-weight: 700;
+    border: none;
+    border-bottom: 1px solid #494949;
+    padding: 10px 0;
+    background: transparent;
+}
+
+.gallery embed {
+    /*margin: 0 5px 0 -4px;*/
+    width: 100%;
+    height: 100%;
+}
+
+/* ABOUT US */
+
+.about ul li {
+    text-align: left;
+    padding-top: 20px 0;
+}
+
+.about ul li img {
+    margin-left: 20px;
+}
 
 /*@media only screen and (min-width: 1024px) {
 
