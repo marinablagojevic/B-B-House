@@ -131,6 +131,10 @@ h4 {
     font-weight: 700;
 }
 
+p {
+    line-height: 22px;
+}
+
 .header {
     max-width: 1500px;
     background-color: #172429;
@@ -169,9 +173,9 @@ section {
 .text {
     padding-top: 100px;
 }
+
 .text p {
     color: white;
-    line-height: 22px;
 }
 
 .header {
@@ -322,10 +326,6 @@ nav .close span:nth-child(2) {
 
 /* ROOMS */
 
-.rooms p {
-    line-height: 22px;
-}
-
 .rooms p span {
     font-weight: 700;
 }
@@ -387,7 +387,7 @@ nav .close span:nth-child(2) {
     display: block;
     text-align: left;
     margin: 10px 0 20px 0; 
-    line-height: 24px;
+    line-height: 22px;
     padding-left: 15px;
     position: relative;
 }
@@ -495,6 +495,56 @@ nav .close span:nth-child(2) {
     top: 50%;
     transform: translateY(-50%);
 }
+
+/* ABOUT US */
+
+.breakfast {
+    background-color: #172429;
+    color: white;
+    padding: 15px 0 15px 0;
+}
+
+.breakfast h2 {
+    color: white;
+}
+
+.breakfast p {
+    padding: 0 15px;
+}
+
+.breakfast ul {
+    margin: 30px 0;
+    padding: 0 15px;
+}
+
+.breakfast ul li {
+    margin-bottom: 10px;
+    border: 5px solid white;
+}
+
+.vine {
+    margin: 20px 0;
+}
+
+.vine h2 {
+    color: #ee7463;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.vine img {
+    border: 5px solid white;
+}
+
+.vine span {
+    font-weight: 700;
+}
+
+.vine p:first-of-type {
+    margin-bottom: 30px;
+}
+
 /*@media only screen and (min-width: 1024px) {
 
 header {
