@@ -355,7 +355,7 @@ nav .close span:nth-child(2) {
     margin: 20px 0 10px 0;
 }
 
-.wrapper img {
+.wrapper img, .things img {
     border: 5px solid white;
     box-shadow: -1px -1px 33px -7px rgba(0,0,0,0.2);
 }
@@ -363,7 +363,8 @@ nav .close span:nth-child(2) {
 /* GALLERY */
 
 .gallery {
-    padding: 0;
+    background-color: #ebebeb;
+    padding: 20px 0;
 }
 
 .gallery button {
@@ -380,6 +381,13 @@ nav .close span:nth-child(2) {
     width: 100%;
     height: 100%;
 }
+
+/* PLUG IN NIJE NAJBOLJE USPEO, 
+POKUSALA SAM DA GA POVECAM I DA SKLONIM 
+BELU TRAKU ISPOD SLAJDERA, 
+ALI NIJE USPELO, NIJE RESPONZIVAN, 
+ALI NA BREAK POINT CU POKUSATI DA UBACIM DRUGACIJI 
+SLAJDER.*/
 
 /* ABOUT US */
 
@@ -574,7 +582,7 @@ nav .close span:nth-child(2) {
     left: -42px;
     top: 50%;
     transform: translateY(-50%);
->>>>>>> master
+>>>>>>> master /* ovo se pojavilo kad sam pushovala na GitKraken*/
 }
 
 .lang:before {
@@ -654,6 +662,37 @@ nav .close span:nth-child(2) {
     top: 50%;
     transform: translateY(-50%);
 }
+
+/*THINGS TO DO*/
+
+.things h2 {
+    margin: 20px 0 30px 0;
+}
+
+.waterfall, .horse, .alpaca, .view {
+    margin-bottom: 40px;
+}
+
+.things h3 {
+    margin: 15px 0 5px 0;
+}
+
+.things p {
+    margin: 10px 0;
+}
+
+.horse, .view {
+    background-color: #ebebeb;
+    padding: 20px;
+}
+
+.something ul li {
+    line-height: 25px;
+    text-align: left;
+    padding-left: 8px;
+}
+
+
 /*@media only screen and (min-width: 1024px) {
 
 header {
