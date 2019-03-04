@@ -390,12 +390,6 @@ nav .close span:nth-child(2) {
     height: 100%;
 }
 
-/* PLUG IN NIJE NAJBOLJE USPEO, 
-POKUSALA SAM DA GA POVECAM I DA SKLONIM 
-BELU TRAKU ISPOD SLAJDERA, 
-ALI NIJE USPELO, NIJE RESPONZIVAN, 
-ALI NA BREAK POINT CU POKUSATI DA UBACIM DRUGACIJI 
-SLAJDER.*/
 
 /* ABOUT US */
 
@@ -403,114 +397,68 @@ SLAJDER.*/
     display: block;
     text-align: left;
     margin: 10px 0 20px 0; 
-<<<<<<< HEAD
     line-height: 22px;
     padding-left: 15px;
     position: relative;
 }
 
-.wifi:before {
+.wifi:before, .pet:before, .lang:before, .sauna:before,
+.dist:before, .park:before, .salad:before, .parking:before {
     content: '';
-    width: 41px;
-    height: 32px;
     position: absolute;
-    background-image: url('../img/wifi.png');
     background-position: center;
     background-repeat: no-repeat;
     left: -42px;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.wifi:before {
+    width: 41px;
+    height: 32px;
+    background-image: url('../img/wifi.png');
 }
 
 .pet:before {
-    content: '';
     width: 37px;
     height: 32px;
-    position: absolute;
     background-image: url('../img/petfrend.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    left: -42px;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 .lang:before {
-    content: '';
     width: 44px;
     height: 44px;
-    position: absolute;
     background-image: url('../img/language.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    left: -42px;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 .sauna:before {
-    content: '';
     width: 37px;
     height: 45px;
-    position: absolute;
     background-image: url('../img/sauna.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    left: -42px;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 .dist:before {
-    content: '';
     width: 37px;
     height: 43px;
-    position: absolute;
     background-image: url('../img/distance.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    left: -42px;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 .park:before {
-    content: '';
     width: 37px;
     height: 47px;
-    position: absolute;
     background-image: url('../img/park.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    left: -42px;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 .salad:before {
-    content: '';
     width: 37px;
     height: 40px;
-    position: absolute;
     background-image: url('../img/salad.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    left: -42px;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 .parking:before {
-    content: '';
     width: 37px;
     height: 40px;
-    position: absolute;
     background-image: url('../img/parking.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    left: -42px;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 /* ABOUT US */
@@ -560,116 +508,11 @@ SLAJDER.*/
 
 .vine p:first-of-type {
     margin-bottom: 30px;
-=======
     line-height: 24px;
     padding-left: 15px;
     position: relative;
 }
 
-.wifi:before {
-    content: '';
-    width: 41px;
-    height: 32px;
-    position: absolute;
-    background-image: url('../img/wifi.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    left: -42px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.pet:before {
-    content: '';
-    width: 37px;
-    height: 32px;
-    position: absolute;
-    background-image: url('../img/petfrend.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    left: -42px;
-    top: 50%;
-    transform: translateY(-50%);
->>>>>>> master /* ovo se pojavilo kad sam pushovala na GitKraken*/
-}
-
-.lang:before {
-    content: '';
-    width: 44px;
-    height: 44px;
-    position: absolute;
-    background-image: url('../img/language.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    left: -42px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.sauna:before {
-    content: '';
-    width: 37px;
-    height: 45px;
-    position: absolute;
-    background-image: url('../img/sauna.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    left: -42px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.dist:before {
-    content: '';
-    width: 37px;
-    height: 43px;
-    position: absolute;
-    background-image: url('../img/distance.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    left: -42px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.park:before {
-    content: '';
-    width: 37px;
-    height: 47px;
-    position: absolute;
-    background-image: url('../img/park.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    left: -42px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.salad:before {
-    content: '';
-    width: 37px;
-    height: 40px;
-    position: absolute;
-    background-image: url('../img/salad.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    left: -42px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.parking:before {
-    content: '';
-    width: 37px;
-    height: 40px;
-    position: absolute;
-    background-image: url('../img/parking.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    left: -42px;
-    top: 50%;
-    transform: translateY(-50%);
-}
 
 /*THINGS TO DO*/
 
@@ -701,8 +544,20 @@ SLAJDER.*/
 }
 
 
-/*@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 700px) {
+    .about ul li {
+        display: inline-block;
+        width: 36%;
+        vertical-align: middle;
+        position: relative;
+    }
 
+    .about ul li:nth-child(odd) {
+        margin-right: 70px;
+    }
+}
+
+/*
 header {
     padding: 15px 0 10px;
     max-width: 1300px;
