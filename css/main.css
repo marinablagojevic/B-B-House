@@ -219,6 +219,7 @@ header nav {
     background-color: #172429;
     position: fixed;
     top: 0;
+    overflow-x: scroll;
     left: 0;
     width: 100%;
     height: 100%;
@@ -238,7 +239,7 @@ header nav {
     display: block;
     text-align: center;
     margin: 0;
-    padding: 81px 0 0 0;
+    padding: 40px 0 0 0;
 
     /*display: table-cell;
     vertical-align: middle;
@@ -277,6 +278,11 @@ header nav {
     color: #aba294;
 }
 
+.logo {
+    float: left;
+    top: 5px;
+    right: 5px;
+}
 
 nav .close {
     width: 45px;
@@ -310,6 +316,8 @@ nav .close span:nth-child(2) {
     padding: 5px 0;
     float: right;
     margin-top: 12px;
+    background-color: transparent;
+    border: none;
 }
 
 .burger span {
