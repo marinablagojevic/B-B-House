@@ -150,7 +150,7 @@ section {
     color: white;
     font-size: 14px;
     font-weight: 700;
-    padding: 20px 15px;
+    padding: 20px 25px;
     background-color:  #ee7463;
     border: none;  
 }
@@ -171,7 +171,7 @@ section {
 }
 
 .text {
-    padding-top: 100px;
+    padding-top: 160px;
 }
 
 .text p {
@@ -184,10 +184,9 @@ section {
 }
 
 .logo {
-    display: inline-block;
+    display: block;
     position: absolute;
-    left: 50%;
-    transform: translate(-50%);
+
 }
 
 h1 {
@@ -199,11 +198,12 @@ h1 {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    margin-top: 20px;
+    margin-top: 15px;
+    width: 200px;
 }
 
 .text img {
-    margin: 120px 0 50px 0;
+    margin: 100px 0 50px 0;
 }
 
 .header {
@@ -278,12 +278,6 @@ header nav {
     color: #aba294;
 }
 
-.logo {
-    float: left;
-    top: 5px;
-    right: 5px;
-}
-
 nav .close {
     width: 45px;
     height: 45px;
@@ -311,7 +305,7 @@ nav .close span:nth-child(2) {
 }
 
 .burger {
-    width: 40px;
+    width: 35px;
     height: 25px;
     padding: 5px 0;
     float: right;
@@ -323,14 +317,14 @@ nav .close span:nth-child(2) {
 .burger span {
     width: 100%;
     height: 5px;
-    background-color: white;
+    background-color: #fff2df;
     display: block;
     margin-top: 7px;
 }
 
 .burger span:nth-child(1) {
     margin-top: 0;
-} /*ZASTO JE POZADINA BURGERA SVETLA, ODAKLE TAJ kVADRAT?*/
+} 
 
 /* ROOMS */
 
@@ -461,7 +455,7 @@ nav .close span:nth-child(2) {
     background-image: url('../img/parking.png');
 }
 
-/* ABOUT US */
+/* BREAKFAST MENU */
 
 .breakfast {
     background-color: #172429;
@@ -475,16 +469,28 @@ nav .close span:nth-child(2) {
 
 .breakfast p {
     padding: 0 15px;
+    max-width: 500px;
 }
 
 .breakfast ul {
     margin: 30px 0;
-    padding: 0 15px;
+    padding: 0;
 }
 
-.breakfast ul li {
+.first-list li {
+    margin-bottom: 5px;
+    margin: 5px 5px;
+    /*border: 5px solid white;*/
+}
+ 
+.second-list li {
     margin-bottom: 10px;
-    border: 5px solid white;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .vine {
@@ -498,9 +504,9 @@ nav .close span:nth-child(2) {
     font-size: 25px;
 }
 
-.vine img {
+/*.vine img {
     border: 5px solid white;
-}
+}*/
 
 .vine span {
     font-weight: 700;
@@ -543,11 +549,114 @@ nav .close span:nth-child(2) {
     padding-left: 8px;
 }
 
+/* INFO AND LOCATION */
+
+.info-loc div {
+    margin: 30px 0 0 40px ;
+}
+
+.info-loc p {
+    text-align: left;
+}
+
+.info-loc p span {
+    color: #ee7463;
+    font-weight: 300;
+}
+
+.info-loc p strong {
+    font-weight: 700;
+}
+
+.info-loc a {
+    color: #494949;
+    margin: 10px 0 15px 0;
+    display: block;
+}
+
+.info-loc a:hover {
+    color: #ee7463;
+}
+
+.owners p {
+    text-align: center;
+}
+
+.owners h3 {
+    margin-bottom: 54px;
+}
+
+.map {
+    padding: 0;
+}
+
+iframe {
+    width: 100%;
+    margin: 10px 0 40px 0;
+    height: 450px;
+}
+
+/* FORM */
+
+/*.form {
+    background-color: #ee7463;
+    padding: 10px 0;
+}*/
+
+form {
+    margin: 0 auto;
+    max-width: 570px;
+}
+
+form legend {
+    color: #494949;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+input, textarea, select {
+   width: 100%;
+   padding: 12px 20px;
+   margin: 10px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   background-color: white;
+   outline: none;
+}
+
+::placeholder {
+    color: #ccc;
+}
+
+label {
+    display: block;
+    float: left;
+    margin-top: 6px;
+    font-weight: 700;
+}
+
+input:focus, textarea:focus, select:focus {
+       border: 1px solid #333;
+       color: #333;
+}
+
+form button {
+    padding: 20px 25px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #ee7463;
+    border: none;
+    margin-top: 20px;
+}
+
+/*MEDIA 700px*/
 
 @media only screen and (min-width: 700px) {
     .about ul li {
         display: inline-block;
-        width: 36%;
+        width: 40%;
         vertical-align: middle;
         position: relative;
     }
@@ -557,111 +666,13 @@ nav .close span:nth-child(2) {
     }
 }
 
+
 /*
-header {
-    padding: 15px 0 10px;
-    max-width: 1300px;
-    position: relative;
-    margin: 0;
-}
+FORME!
 
-.text {
-    background-image: url(img/1.jpg);
-}
+label, hint, dodatni natpisi-error 
 
-header nav, header .info {
-        display: block;
-        position: initial;
-        width: auto;
-        height: auto;
-        background: inherit;
-        float: right;
-        padding: 0;
-    }
-
-header nav li, header .info li {
-        float: left;
-    }
-
-header nav a {
-        color: white;
-        margin-left: 20px;
-        padding-bottom: 15px;
-    }
-
-
-header nav a:not(.btn).active,
-header nav a:not(.btn):hover {
-        border-bottom: 1px solid #ee7463;
-    }
-
-header nav a,
-header nav a.btn {
-        font-size: 18px;
-    }
-
-header nav a.btn {
-        color: #fff;
-        background: #ee7463;
-        background: rgb(238, 116, 99, 0.25);
-    }
-
-    header nav a.btn:hover {
-        background: rgb(238, 116, 99);
-    }
-
-.burger, header nav .close {
-        display: none;
-    }
-
-h1 {
-    font-size: 50px;
-    width: 100%;
-}
-
-header p, h1 {
-    text-align: left;
-}
-
-.info {
-    position: relative;
-    display: inline;
-    width: 100%
-    top: 0;
-    right: 10%;
-    background: rgb(0, 0, 0, 0.25);
-}
-
-.info li {
-        margin-left: 20px;
-}
-
-.text p{
-    width: 33.33%;
-    padding-top: 20px;
-    line-height: 24px;
-}
-
-.text p span {
-    font-weight: 700;
-}*/
-
-/**rooms**/
-/*
-h2 {
-    text-align: center;
-}
-
-section p {
-    text-align: center;
-    width: 60%;
-    margin: 0 auto;
-    padding: 20px 0 0 0;
-    line-height: 24px;
-}
-
-}
-
+30seconds
 */
 
 

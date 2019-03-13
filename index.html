@@ -124,9 +124,33 @@
    <!-- Gallery -->
 
   <section class="gallery" id="gallery">
-    <h2 id="gallery">Gallery</h2>
+    <h2>Gallery</h2>
 
-    <embed src="standard.html">
+    <div class="flexslider unstyle-list">
+  <ul class="slides">
+    <li data-thumb="slide1-thumb.jpg">
+      <img src="img/6-11.jpg" />
+    </li>
+    <li data-thumb="slide2-thumb.jpg">
+      <img src="img/7.jpg" />
+    </li>
+    <li data-thumb="slide3-thumb.jpg">
+      <img src="img/8.jpg" />
+    </li>
+    <li data-thumb="slide4-thumb.jpg">
+      <img src="img/9.jpg" />
+    </li>
+      <li data-thumb="slide2-thumb.jpg">
+      <img src="img/10.jpg" />
+    </li>
+    <li data-thumb="slide3-thumb.jpg">
+      <img src="img/6-11.jpg" />
+    </li>
+    <li data-thumb="slide4-thumb.jpg">
+      <img src="img/12.jpg" />
+    </li>
+  </ul>
+</div>
      <!-- neki plug in *ne znam kako se to postavlja jos* -->
 
      <!--<button>See more pictures</button>-->
@@ -135,7 +159,7 @@
 
    <!-- About us -->
 
-   <section class="about" id="about-us">
+   <section class="about .clearfix" id="about-us">
      <h2>About us</h2>
     
      <ul class="unstyle-list custom-list">
@@ -158,16 +182,24 @@
 
     <p>Granny’s kitchn made home-made pies with home-made cheese and kajmak. The home-made coffee is brewing and spread wonderfull smell with a warm pastries out in the dining room.</p>
 
-  <ul class="unstyle-list">
-    <li><img src="img/13.jpg" alt="some franch bread"></li>
-    <li><img src="img/14.jpg" alt="home made bread"></li>
-    <li><img src="img/15.jpg" alt="sunny side up egs"></li>
-    <li><img src="img/16.jpg" alt="sandwitch"></li>
-    <li><img src="img/17.jpg" alt="swis cheese image"></li>
-    <li><img src="img/18.jpg" alt="pancakes"></li>
-    <li><img src="img/19.jpg" alt="milk in glass next to sunflower"></li>
-    <li><img src="img/20.jpg" alt="carote juce"></li>
+<div class="flex">
+<div>
+  <ul class="unstyle-list first-list">
+    <li><img src="img/13a.jpg" alt="some franch bread"></li>
+    <li><img src="img/14a.jpg" alt="home made bread"></li>
+    <li><img src="img/15a.jpg" alt="sunny side up egs"></li>
+    <li><img src="img/16a.jpg" alt="sandwitch"></li>
   </ul>
+</div>
+<div>
+  <ul class="unstyle-list first-list">
+    <li><img src="img/17a.jpg" alt="swis cheese image"></li>
+    <li><img src="img/18a.jpg" alt="pancakes"></li>
+    <li><img src="img/19a.jpg" alt="milk in glass next to sunflower"></li>
+    <li><img src="img/20a.jpg" alt="carote juce"></li>
+  </ul>
+</div>
+</div>
   
   <p>Also we offer vegeterian and vegan food. 
 Fruts and vegetables are home grown in our garden.</p>
@@ -248,7 +280,7 @@ in our wine colection and you can try it too:<span>San Rustico Amarone della Val
 
     <!-- Info and location -->
 
-  <section>
+  <section class="info-loc">
     <h2>Info &#38; Location</h2>
       <div>
         <p><span>Contact us:</span><br>
@@ -264,18 +296,21 @@ in our wine colection and you can try it too:<span>San Rustico Amarone della Val
             Switzerland</strong></p>
       </div>
 
-      <div>
-        <p><span>Follow us</span><br><br>
-        <a href="https://www.facebook.com" target="_blank"><strong>Facebook</strong></a><br><br>
-        <a href="https://www.instagram.com" target="_blank"><strong>Instagram</strong></a><br><br>
+      <div class="folow">
+        <p><span>Follow us</span><br>
+        <a href="https://www.facebook.com" target="_blank"><strong>Facebook</strong></a>
+        <a href="https://www.instagram.com" target="_blank"><strong>Instagram</strong></a>
         <a href="https://www.tripadvisor.com" target="_blank"><strong>Tripadviser</strong></a></p>
       </div>
+</section>
 
+<section class="map">
       <div>
-        <!-- Mapa -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14005.66072952375!2d7.072450163375626!3d46.43010416877721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssr!2srs!4v1551981396939" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
-
-      <div>
+</section>
+<section>
+      <div class="owners">
         <img src="img/29.jpg" alt="image of an owners older man and woman">
       
         <h3>Word from owners</h3>
@@ -284,12 +319,11 @@ in our wine colection and you can try it too:<span>San Rustico Amarone della Val
 
         <p>-Angela and Romeo Bern-</p>
       </div>
- 
-  </section>
+ </section>
 
      <!-- Form -->
 
-     <section>
+     <section class="form">
        <h2 id="book">Book a Room</h2>
 
        <form>
@@ -310,16 +344,18 @@ in our wine colection and you can try it too:<span>San Rustico Amarone della Val
                   <option value="“Royal Feeling”">Royal Feeling</option>
                 </select>
            </select>
-           Check in:
-           <input type="date" name="check in">
-           Check out:
-           <input type="date" name="check out">
-           Adults:
+           <label for="chin">Check in:</label>
+           <input type="date" id="chin" name="check in">
+           <label for="chout">Check out:</label>
+           <input type="date" id="chout" name="check out">
+           <label for="adults">Adults:</label>
+           <input type="number" 
+          id="adults" name="quantity" min="1" max="5">
+           <label for="children">Children:</label>
+           <input type="number" id="children" name="quantity" min="0" max="5">
+           <label for="pets">Pets:</label>
+           <input type="number" id="pets" name="quantity" min="0" max="5">
            <input type="number" name="quantity" min="1" max="5">
-           Children:
-           <input type="number" name="quantity" min="0" max="5">
-           Pets:
-           <input type="number" name="quantity" min="0" max="5">
          </fieldset>
 
          <button>Submit booking request</button>
@@ -372,6 +408,7 @@ in our wine colection and you can try it too:<span>San Rustico Amarone della Val
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
+  <script src="js/pjassor.slider-27.5.5.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
