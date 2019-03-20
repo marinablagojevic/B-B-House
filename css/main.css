@@ -141,7 +141,7 @@ p {
 }
 
 section {
-    margin-top: 40px;
+    margin-top: 30px;
     /*padding-top: 60px;
     padding-bottom: 60px;*/
 }
@@ -152,11 +152,13 @@ section {
     font-weight: 700;
     padding: 20px 25px;
     background-color:  #ee7463;
-    border: none;  
+    border: none;
+    transition: 0.3s;  
 }
 
-.cta:hover, .book-button:hover {
-    background-color: #c44d3d;
+.cta:hover, .book-button:hover, form button:hover {
+    background-color: #fc9449;
+    cursor: pointer;
 }
 
 .book-button {
@@ -207,7 +209,7 @@ h1 {
 }
 
 .header {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url(../img/1.jpg);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.0)), url(../img/1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -293,7 +295,7 @@ nav .close {
 nav .close span {
     width: 30px;
     height: 4px;
-    background: #fff2df;
+    background: #fff;
     display: block;
     transform: rotate(45deg);
 }
@@ -317,7 +319,7 @@ nav .close span:nth-child(2) {
 .burger span {
     width: 100%;
     height: 5px;
-    background-color: #fff2df;
+    background-color: #fff;
     display: block;
     margin-top: 7px;
 }
@@ -328,7 +330,7 @@ nav .close span:nth-child(2) {
 
 /* ROOMS */
 
-.rooms p span {
+.room-centered-text p span {
     font-weight: 700;
 }
 
@@ -346,18 +348,18 @@ nav .close span:nth-child(2) {
 } /*KAKO DA POZICIONIRAM CHECK GALLERY LINK NA SLIKU SOBE DOLE DESNO?*/
 
 .wrapper h3 {
-    margin: 30px 0 10px 0;
+    margin: 25px 0 10px 0;
 }
 
 .wrapper h4 {
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .wrapper p {
     margin: 20px 0 10px 0;
 }
 
-.wrapper img, .things img {
+/*.wrapper img, */.things img {
     border: 5px solid white;
     box-shadow: -1px -1px 33px -7px rgba(0,0,0,0.2);
 }
@@ -378,11 +380,11 @@ nav .close span:nth-child(2) {
     background: transparent;
 }
 
-.gallery embed {
-    /*margin: 0 5px 0 -4px;*/
+/**.gallery embed {
+    /*margin: 0 5px 0 -4px;
     width: 100%;
     height: 100%;
-}
+}*/
 
 
 /* ABOUT US */
@@ -470,6 +472,7 @@ nav .close span:nth-child(2) {
 .breakfast p {
     padding: 0 15px;
     max-width: 500px;
+    margin: 0 auto;
 }
 
 .breakfast ul {
@@ -478,8 +481,7 @@ nav .close span:nth-child(2) {
 }
 
 .first-list li {
-    margin-bottom: 5px;
-    margin: 5px 5px;
+    margin: 10px 5px;
     /*border: 5px solid white;*/
 }
  
@@ -552,7 +554,7 @@ nav .close span:nth-child(2) {
 /* INFO AND LOCATION */
 
 .info-loc div {
-    margin: 30px 0 0 40px ;
+    margin: 30px 50px 0 20px ;
 }
 
 .info-loc p {
@@ -561,7 +563,7 @@ nav .close span:nth-child(2) {
 
 .info-loc p span {
     color: #ee7463;
-    font-weight: 300;
+    font-weight: 700;
 }
 
 .info-loc p strong {
@@ -572,10 +574,17 @@ nav .close span:nth-child(2) {
     color: #494949;
     margin: 10px 0 15px 0;
     display: block;
+    transition: 0.3s;
 }
 
 .info-loc a:hover {
-    color: #ee7463;
+    color: #fc9449;
+    cursor: pointer;
+}
+
+.owners img {
+    border: 5px solid white;
+    box-shadow: -1px -1px 33px -7px rgba(0,0,0,0.2);
 }
 
 .owners p {
@@ -583,7 +592,7 @@ nav .close span:nth-child(2) {
 }
 
 .owners h3 {
-    margin-bottom: 54px;
+    margin-bottom: 20px;
 }
 
 .map {
@@ -641,6 +650,11 @@ input:focus, textarea:focus, select:focus {
        color: #333;
 }
 
+input:hover, textarea:hover, select:hover {
+       border: 1px solid #333;
+       cursor: text;
+}
+
 form button {
     padding: 20px 25px;
     color: white;
@@ -649,11 +663,149 @@ form button {
     background-color: #ee7463;
     border: none;
     margin-top: 20px;
+    transition: 0.3s;
 }
 
-/*MEDIA 700px*/
+/* FOOTER */
+
+footer {
+    background-color:  #172429;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+.footerlogo {
+    margin-bottom: 10px;
+}
+
+.footerinfo p {
+    font-size: 10px;
+    color: #fff2df;
+}
+
+.footernav .navigation {
+    color: white;
+    padding-top: 10px;
+}
+
+.footernav .navigation li {
+    border-bottom: none;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.footernav .navigation li:last-child {
+    margin-bottom: 0;
+}
+
+.footernav .navigation li a {
+    font-size: 14px;
+}
+
+.footerinfo {
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+    color: #fff2df;
+    text-align: center;
+    padding: 30px 0 5px 0;
+    line-height: 20px;
+}
+
+.footerinfo ul {
+    padding-left: 0;
+}
+
+.footerinfo a {
+    width: 20px;
+    height: 100%;
+    margin-left: 30px;
+}
+
+.footerinfo a:first-child {
+    margin-left: 0;
+}
+
+/*MEDIA 640px*/
+
+@media only screen and (min-width: 640px) {
+   .text {
+    text-align: left;
+    width: 500px;
+    margin-left: 30px;
+   }
+
+   .cta {
+    position: absolute;
+    left: 20px;
+    transform: translate(20px);
+   }
+
+   .header {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url(../img/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
+
+    .room-centered-text {
+        max-width: 540px;
+        margin:0 auto;
+    }
+
+    .wrapper .room {
+        display: inline-block;
+        width: 46%;
+        vertical-align: top;
+        margin-right: 20px;
+    }
+
+    .room:nth-child(even) {
+       margin-right: 0;
+    }
+
+    .room p {
+        min-height: 109px;
+    }
+
+    .room {
+        padding: 0 5px;
+        transition: 0.3s;
+    }
+
+    .room:hover {
+        box-shadow: -1px -1px 33px -7px rgba(0,0,0,0.2);
+    }
+
+     .waterfall, .horse, .alpaca, .view{
+        display: inline-block;
+        width: 45%;
+        vertical-align: middle;
+        position: relative;
+        margin-right: 20px;
+    }
+
+    .something h3 {
+        text-align: left;
+        margin-left: 50px;
+    }
+
+    .something {
+        width: 400px;
+    }
+
+    /*.second-list li {
+        display: inline-block;
+        width: 32%;
+        max-height: 121px;
+        overflow: hidden;
+    }*/
+}
 
 @media only screen and (min-width: 700px) {
+
+    section, footer {
+        margin-top: 50px;
+    }
+
     .about ul li {
         display: inline-block;
         width: 40%;
@@ -664,7 +816,300 @@ form button {
     .about ul li:nth-child(odd) {
         margin-right: 70px;
     }
+
+    .info-loc .inf {
+        margin: 0 auto;
+    }
+
+    .info-loc .inf div {
+        display: inline-block;
+        margin: 0px 10px;
+        width: 30%;
+        vertical-align: top;
+        position: relative;
+        left: 46px;
+    }
+
+    .folow p {
+        padding-right: 0;
+    }
+
+    .owner-img {
+        display: inline-block;
+        width: 46%;
+        float: left;
+    }
+
+    .owner-text {
+        display: inline-block;
+        width: 46%;
+    }
+
+    .owners {
+        vertical-align: top;
+    }
+
+    .owner-text h3 {
+       margin: 0 0 20px;
+    }
+
+    .footernav .navigation {
+        padding-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .footernav .navigation li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .footernav .navigation li:last-child {
+        margin-bottom: 0;
+        margin-right: 0;
+        background-color: transparent;
+        border: none;
+    }
+
+    .footernav .navigation li a {
+        font-size: 14px;
+        color: #ee7463;
+    }
+
+    .footernav .navigation li a:hover {
+        color: #fc9449;
+    }
+
+    .footerinfo {
+        padding-top: 10px;
+        margin: 0 auto;
+    }
+
+    .footerinfo ul li {
+        display: inline-block;
+        margin-right: 30px;
+    }
+
+    .footerinfo ul:last-child {
+        margin-right: 0;
+    }
+
+    .first-p p {
+        margin: 0 auto;
+    }
+
+    .parallax img, .parallax2 img {
+        display: none;
+    }
+
+    .parallax, .parallax2 {
+        min-height: 300px; 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .parallax {
+        background-image: url("../img/21.jpg");
+    }
+
+    .parallax2 {
+        background-image: url("../img/24.jpg");
+    }
+
+    .second-list li:nth-child(n+2) {
+        display: inline-block;
+        width: 45%;
+        margin: 10px 10px 0;
+        vertical-align: top;
+        position: relative;
+        max-height: 185px;
+        overflow: hidden;
+    }
+
+    .second-list img {
+        transform: translateY(-9px);
+    }
+
+    .second-list li:last-child {
+        margin-right: 0;
+    }
+
+    .vine p {
+        margin-top: 15px;
+    }
+
 }
+
+
+@media only screen and (min-width: 1040px) {
+    .room img {
+        display: none;
+    }
+
+    .room h3, .room p, .room h4, .book-button {
+        text-align: left;
+    }
+
+    .wrapper {
+        margin-top: 60px;
+    }
+
+    .wrapper a {
+        display: none;
+    }
+
+    .wrapper .room {
+        display: block;
+        width: 80%;
+        margin-bottom: 30px;
+        background-size: 300px auto;
+        height: 250px;
+        margin-right: 0;
+    }
+
+    .room1 {
+        background: #fff url(../img/2a.jpg) no-repeat left;
+    }
+
+    .room2 {
+        background: #fff url(../img/3a.jpg) no-repeat right;
+    }
+
+    .room3 {
+        background: #fff url(../img/4a.jpg) no-repeat left;
+    }
+
+    .room4 {
+        background: #fff url(../img/5a.jpg) no-repeat right;   
+    }
+
+    .room1, .room3 {
+        padding-left: 350px;
+        padding-right: 20px;
+        border-left: 25px solid white;
+    }
+
+    .room2, .room4 {
+        padding-right: 350px;
+        padding-left: 20px;
+        border-right: 25px solid white;
+    }
+
+    .book-button {
+        position: relative;
+        bottom: 35px;
+        left: 55px;
+    }
+
+    .room h3 {
+        padding-top: 15px;
+    }
+
+    .room p {
+        min-height: auto;
+        max-width: 536px;
+    }
+
+    .room h4 {
+        padding-top: 20px;
+        margin: 0;
+    }
+
+    header nav {
+        display: inline-block;
+        background-color: transparent;
+        position: absolute;
+        overflow-x: inherit;
+        top: 15px;
+        right: 10px;
+        height: 50px;
+        border-bottom: none;
+    }
+
+    .navigation {
+        display: block;
+        text-align: right;
+        margin: 0 15px 0 0;
+        padding: 40px 0 0 0;
+    }
+
+    .navigation li {
+        display: inline-block;
+        padding: 0;
+    }
+
+    .navigation li:not(:last-child) {
+        border-bottom: none;
+    }
+
+    .navigation a {
+        margin-right: 20px;
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+
+    .navigation a:hover {
+        cursor: pointer;
+        color: #ee7463;
+        transition: 0.3s;
+        border-bottom: 1px solid #ee7463;
+    }
+
+    .navigation .btn {
+        background-color: #ee7463;
+        padding: 10px 15px;
+        margin-right: 0;
+    }
+
+    .navigation .btn:hover {
+        background-color:#fc9449;
+        transition: 0.3s;
+        cursor: pointer;
+        color: white;
+         border-bottom: none;
+    }
+
+
+    .info {
+        position: absolute;
+        display: inline-block;
+        top: -26px;
+        text-align: right;
+        line-height: 18px;
+        font-size: 12px;
+        width: 100%;
+        padding: 8px 15px;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .info li {
+        display: inline-block;
+        color: #aba294;
+        margin-right: 15px;
+    }
+
+    .navigation .active {
+        color: #ee7463;
+        border-bottom: 1px solid #ee7463;
+    }
+
+    .navigation .active:hover {
+        color: white;
+        border-bottom: 1px solid white;
+    }
+    
+
+    nav .close, .burger {
+        display: none;
+    }
+
+    .logo {
+        top: 40px;
+    }
+
+}
+
 
 
 /*
