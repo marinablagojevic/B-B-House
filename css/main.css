@@ -97,7 +97,9 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* GLOBAL styles */
+
+
+/************ GLOBAL styles ************/
 
 * {
     box-sizing: border-box;
@@ -141,9 +143,7 @@ p {
 }
 
 section {
-    margin-top: 30px;
-    /*padding-top: 60px;
-    padding-bottom: 60px;*/
+    margin-top: 50px;
 }
 
 .cta, .book-button {
@@ -166,10 +166,10 @@ section {
     padding: 15px 20px; 
 }
 
-/* HEADER */
+/******************** HEADER ***********************/
 
 .header, section {
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
 .text {
@@ -188,7 +188,6 @@ section {
 .logo {
     display: block;
     position: absolute;
-
 }
 
 h1 {
@@ -214,7 +213,7 @@ h1 {
     background-repeat: no-repeat;
 }
 
-/* NAVIGATION */
+/*************** NAVIGATION *************/
 
 header nav {
     display: none;
@@ -226,14 +225,6 @@ header nav {
     width: 100%;
     height: 100%;
     z-index: 99;
-    /*display: table;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #17229;
-    text-align: center;*/
 }
 
 
@@ -242,10 +233,6 @@ header nav {
     text-align: center;
     margin: 0;
     padding: 40px 0 0 0;
-
-    /*display: table-cell;
-    vertical-align: middle;
-    padding-top: 10px;*/
 }
 
 .navigation li {
@@ -265,7 +252,6 @@ header nav {
 .navigation li:last-child {
     background-color: #ee7463;
 }
-
 
 .info {
     position: absolute;
@@ -328,7 +314,7 @@ nav .close span:nth-child(2) {
     margin-top: 0;
 } 
 
-/* ROOMS */
+/**************** ROOMS ***************/
 
 .room-centered-text p span {
     font-weight: 700;
@@ -336,6 +322,7 @@ nav .close span:nth-child(2) {
 
 .room {
     position: relative;
+    margin-top: 20px;
 }
 
 .wrapper a {
@@ -345,30 +332,35 @@ nav .close span:nth-child(2) {
     border-bottom: 1px solid #494949;
     position: inherit;
     top: 8px;
-} /*KAKO DA POZICIONIRAM CHECK GALLERY LINK NA SLIKU SOBE DOLE DESNO?*/
+} 
 
 .wrapper h3 {
-    margin: 25px 0 10px 0;
+    margin: 30px 0 10px 0;
 }
 
 .wrapper h4 {
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 .wrapper p {
-    margin: 20px 0 10px 0;
+    margin: 30px 0 10px 0;
 }
 
-/*.wrapper img, */.things img {
+.things img {
     border: 5px solid white;
     box-shadow: -1px -1px 33px -7px rgba(0,0,0,0.2);
 }
 
-/* GALLERY */
+/********************** GALLERY ***********************/
 
 .gallery {
     background-color: #ebebeb;
-    padding: 20px 0;
+    padding: 20px 10px;
+}
+
+.gallery ul {
+    margin: 0;
+    padding: 0;
 }
 
 .gallery button {
@@ -380,14 +372,7 @@ nav .close span:nth-child(2) {
     background: transparent;
 }
 
-/**.gallery embed {
-    /*margin: 0 5px 0 -4px;
-    width: 100%;
-    height: 100%;
-}*/
-
-
-/* ABOUT US */
+/**************** ABOUT US ***********************/
 
 .about ul li {
     display: block;
@@ -457,12 +442,12 @@ nav .close span:nth-child(2) {
     background-image: url('../img/parking.png');
 }
 
-/* BREAKFAST MENU */
+/****************** BREAKFAST MENU *********************/
 
 .breakfast {
     background-color: #172429;
     color: white;
-    padding: 15px 0 15px 0;
+    padding: 15px 10px;
 }
 
 .breakfast h2 {
@@ -480,19 +465,34 @@ nav .close span:nth-child(2) {
     padding: 0;
 }
 
-.first-list li {
-    margin: 10px 5px;
-    /*border: 5px solid white;*/
-}
- 
-.second-list li {
-    margin-bottom: 10px;
+.breakfast ul li {
+    margin: 0 0 10px;
+    padding: 0;
+    display: block;
+    float: left;
+    width: 50%;
 }
 
-.flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.breakfast .first-list li:nth-child(odd) {
+    padding-right: 5px;
+}
+
+.breakfast .first-list li:nth-child(even) {
+    padding-left: 5px;
+}
+
+.breakfast ul img {
+    display: block;
+    width: 100%;
+}
+
+.breakfast .second-list {
+    display:block; 
+}
+
+.breakfast .second-list li  {
+    width: 100%;
+    padding: 0;
 }
 
 .vine {
@@ -506,10 +506,6 @@ nav .close span:nth-child(2) {
     font-size: 25px;
 }
 
-/*.vine img {
-    border: 5px solid white;
-}*/
-
 .vine span {
     font-weight: 700;
 }
@@ -519,10 +515,11 @@ nav .close span:nth-child(2) {
     line-height: 24px;
     padding-left: 15px;
     position: relative;
+    margin-top: 30px;
 }
 
 
-/*THINGS TO DO*/
+/****************THINGS TO DO*******************/
 
 .things h2 {
     margin: 20px 0 30px 0;
@@ -551,7 +548,7 @@ nav .close span:nth-child(2) {
     padding-left: 8px;
 }
 
-/* INFO AND LOCATION */
+/*************** INFO AND LOCATION ******************/
 
 .info-loc div {
     margin: 30px 50px 0 20px ;
@@ -605,12 +602,8 @@ iframe {
     height: 450px;
 }
 
-/* FORM */
+/************************ FORM ******************/
 
-/*.form {
-    background-color: #ee7463;
-    padding: 10px 0;
-}*/
 
 form {
     margin: 0 auto;
@@ -650,11 +643,6 @@ input:focus, textarea:focus, select:focus {
        color: #333;
 }
 
-input:hover, textarea:hover, select:hover {
-       border: 1px solid #333;
-       cursor: text;
-}
-
 form button {
     padding: 20px 25px;
     color: white;
@@ -666,7 +654,7 @@ form button {
     transition: 0.3s;
 }
 
-/* FOOTER */
+/********************* FOOTER *******************/
 
 footer {
     background-color:  #172429;
@@ -676,6 +664,7 @@ footer {
 
 .footerlogo {
     margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 .footerinfo p {
@@ -725,7 +714,7 @@ footer {
     margin-left: 0;
 }
 
-/*MEDIA 640px*/
+/*********************MEDIA 640px**********************/
 
 @media only screen and (min-width: 640px) {
    .text {
@@ -746,7 +735,7 @@ footer {
     background-repeat: no-repeat;
    }
 
-    .room-centered-text {
+   .room-centered-text {
         max-width: 540px;
         margin:0 auto;
     }
@@ -791,13 +780,6 @@ footer {
     .something {
         width: 400px;
     }
-
-    /*.second-list li {
-        display: inline-block;
-        width: 32%;
-        max-height: 121px;
-        overflow: hidden;
-    }*/
 }
 
 @media only screen and (min-width: 700px) {
@@ -853,29 +835,29 @@ footer {
        margin: 0 0 20px;
     }
 
-    .footernav .navigation {
+    .footernav .navigation2 {
         padding-top: 10px;
         margin-bottom: 10px;
     }
 
-    .footernav .navigation li {
+    .footernav .navigation2 li {
         display: inline-block;
         margin-right: 10px;
     }
 
-    .footernav .navigation li:last-child {
+    .footernav .navigation2 li:last-child {
         margin-bottom: 0;
         margin-right: 0;
         background-color: transparent;
         border: none;
     }
 
-    .footernav .navigation li a {
+    .footernav .navigation2 li a {
         font-size: 14px;
         color: #ee7463;
     }
 
-    .footernav .navigation li a:hover {
+    .footernav .navigation2 li a:hover {
         color: #fc9449;
     }
 
@@ -897,43 +879,7 @@ footer {
         margin: 0 auto;
     }
 
-    .parallax img, .parallax2 img {
-        display: none;
-    }
-
-    .parallax, .parallax2 {
-        min-height: 300px; 
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .parallax {
-        background-image: url("../img/21.jpg");
-    }
-
-    .parallax2 {
-        background-image: url("../img/24.jpg");
-    }
-
-    .second-list li:nth-child(n+2) {
-        display: inline-block;
-        width: 45%;
-        margin: 10px 10px 0;
-        vertical-align: top;
-        position: relative;
-        max-height: 185px;
-        overflow: hidden;
-    }
-
-    .second-list img {
-        transform: translateY(-9px);
-    }
-
-    .second-list li:last-child {
-        margin-right: 0;
-    }
+    
 
     .vine p {
         margin-top: 15px;
@@ -1045,7 +991,7 @@ footer {
 
     .navigation a {
         margin-right: 20px;
-        font-size: 16px;
+        font-size: 14px;
         padding-bottom: 10px;
     }
 
@@ -1070,7 +1016,6 @@ footer {
          border-bottom: none;
     }
 
-
     .info {
         position: absolute;
         display: inline-block;
@@ -1086,7 +1031,7 @@ footer {
     .info li {
         display: inline-block;
         color: #aba294;
-        margin-right: 15px;
+        margin-right: 20px;
     }
 
     .navigation .active {
@@ -1108,6 +1053,60 @@ footer {
         top: 40px;
     }
 
+    .flex {
+    justify-content: left;
+    }
+
+    .first-p p:nth-of-type(2) {
+        margin-left: 0px;
+        max-width: 600px;
+    }
+
+    .parallax img, .parallax2 img {
+        display: block;
+    }
+
+    .parallax, .parallax2 {
+        display: none;
+    }
+
+    .parallax {
+        background-image: none;
+    }
+
+    .parallax2 {
+        background-image: none;
+    }
+
+    .second-list li:nth-child(n+2), .parallax img, .parallax2 img {
+        display: block;
+        width: 100%;
+        margin: 5px 5px 0;
+        position: static;
+        max-height: 300px;
+        overflow: visible;
+    }
+
+    .second-list img {
+        transform: translateY(-9px);
+    }
+
+    .second-list li:last-child {
+        margin-right: 0;
+    }
+
+    .second-section {
+        display: flex;
+        width: 45%;
+        justify-content: right;
+        flex-direction: row;
+    }
+
+    .vine p {
+        margin-top: 15px;
+    }
+
+    
 }
 
 
