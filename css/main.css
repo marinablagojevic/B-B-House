@@ -157,13 +157,14 @@ section {
 }
 
 .cta:hover, .book-button:hover, form button:hover {
-    background-color: #fc9449;
+    background-image: linear-gradient(to right, rgba(252,148,73,1), rgba(238,116,99,1));
     cursor: pointer;
+    border: none;
 }
 
 .book-button {
    margin-bottom: 20px;
-    padding: 15px 20px; 
+   padding: 15px 20px; 
 }
 
 /******************** HEADER ***********************/
@@ -226,7 +227,6 @@ header nav {
     height: 100%;
     z-index: 99;
 }
-
 
 .navigation {
     display: block;
@@ -717,22 +717,23 @@ footer {
 /*********************MEDIA 640px**********************/
 
 @media only screen and (min-width: 640px) {
+
    .text {
-    text-align: left;
-    width: 500px;
-    margin-left: 30px;
+        text-align: left;
+        width: 500px;
+        margin-left: 30px;
    }
 
    .cta {
-    position: absolute;
-    left: 20px;
-    transform: translate(20px);
+        position: absolute;
+        left: 20px;
+        transform: translate(20px);
    }
 
    .header {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url(../img/1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url(../img/1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
    }
 
    .room-centered-text {
@@ -799,6 +800,14 @@ footer {
         margin-right: 70px;
     }
 
+    .breakfast .second-list li {
+        width: 30%;
+        margin-right: 10px;
+        position: static;
+        max-height: 210px;
+        overflow: hidden;
+    }
+
     .info-loc .inf {
         margin: 0 auto;
     }
@@ -806,7 +815,7 @@ footer {
     .info-loc .inf div {
         display: inline-block;
         margin: 0px 10px;
-        width: 30%;
+        width: 29%;
         vertical-align: top;
         position: relative;
         left: 46px;
@@ -818,7 +827,7 @@ footer {
 
     .owner-img {
         display: inline-block;
-        width: 46%;
+        width: 36%;
         float: left;
     }
 
@@ -835,29 +844,30 @@ footer {
        margin: 0 0 20px;
     }
 
-    .footernav .navigation2 {
+    .footernav .navigation {
         padding-top: 10px;
         margin-bottom: 10px;
+        margin: 0 auto;
     }
 
-    .footernav .navigation2 li {
+    .footernav .navigation li {
         display: inline-block;
         margin-right: 10px;
     }
 
-    .footernav .navigation2 li:last-child {
+    .footernav .navigation li:last-child {
         margin-bottom: 0;
         margin-right: 0;
         background-color: transparent;
         border: none;
     }
 
-    .footernav .navigation2 li a {
+    .footernav .navigation li a {
         font-size: 14px;
         color: #ee7463;
     }
 
-    .footernav .navigation2 li a:hover {
+    .footernav .navigation li a:hover {
         color: #fc9449;
     }
 
@@ -879,8 +889,6 @@ footer {
         margin: 0 auto;
     }
 
-    
-
     .vine p {
         margin-top: 15px;
     }
@@ -889,6 +897,17 @@ footer {
 
 
 @media only screen and (min-width: 1040px) {
+    header, section {
+        padding: 0 50px;
+    }
+
+    .header {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.0)), url(../img/1.jpg);
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
     .room img {
         display: none;
     }
@@ -907,11 +926,12 @@ footer {
 
     .wrapper .room {
         display: block;
-        width: 80%;
+        width: 100%;
         margin-bottom: 30px;
-        background-size: 300px auto;
+        background-size: 400px auto;
         height: 250px;
         margin-right: 0;
+        margin-bottom: 30px;
     }
 
     .room1 {
@@ -931,30 +951,31 @@ footer {
     }
 
     .room1, .room3 {
-        padding-left: 350px;
+        padding-left: 450px;
         padding-right: 20px;
-        border-left: 25px solid white;
+        border: 5px solid white;
     }
 
     .room2, .room4 {
         padding-right: 350px;
         padding-left: 20px;
-        border-right: 25px solid white;
+        border: 5px solid white;
     }
 
     .book-button {
         position: relative;
-        bottom: 35px;
+        bottom: 41px;
         left: 55px;
     }
 
     .room h3 {
         padding-top: 15px;
+        margin-top: 10px;
     }
 
     .room p {
         min-height: auto;
-        max-width: 536px;
+        max-width: 500px;
     }
 
     .room h4 {
@@ -980,6 +1001,10 @@ footer {
         padding: 40px 0 0 0;
     }
 
+    .footernav .navigation {
+        text-align: center;
+    }
+
     .navigation li {
         display: inline-block;
         padding: 0;
@@ -997,9 +1022,9 @@ footer {
 
     .navigation a:hover {
         cursor: pointer;
-        color: #ee7463;
+        color: #FC9449;
         transition: 0.3s;
-        border-bottom: 1px solid #ee7463;
+        border-bottom: 1px solid #FC9449;
     }
 
     .navigation .btn {
@@ -1009,11 +1034,11 @@ footer {
     }
 
     .navigation .btn:hover {
-        background-color:#fc9449;
+        background-color: #fc9449;
         transition: 0.3s;
         cursor: pointer;
         color: white;
-         border-bottom: none;
+        border-bottom: none;
     }
 
     .info {
@@ -1040,10 +1065,9 @@ footer {
     }
 
     .navigation .active:hover {
-        color: white;
-        border-bottom: 1px solid white;
-    }
-    
+        color: #FC9449;
+        border-bottom: 1px solid #FC9449;
+    }   
 
     nav .close, .burger {
         display: none;
@@ -1053,53 +1077,8 @@ footer {
         top: 40px;
     }
 
-    .flex {
-    justify-content: left;
-    }
-
-    .first-p p:nth-of-type(2) {
-        margin-left: 0px;
-        max-width: 600px;
-    }
-
-    .parallax img, .parallax2 img {
-        display: block;
-    }
-
-    .parallax, .parallax2 {
-        display: none;
-    }
-
-    .parallax {
-        background-image: none;
-    }
-
-    .parallax2 {
-        background-image: none;
-    }
-
-    .second-list li:nth-child(n+2), .parallax img, .parallax2 img {
-        display: block;
-        width: 100%;
-        margin: 5px 5px 0;
-        position: static;
-        max-height: 300px;
-        overflow: visible;
-    }
-
-    .second-list img {
-        transform: translateY(-9px);
-    }
-
-    .second-list li:last-child {
+    .breakfast .second-list li:last-child {
         margin-right: 0;
-    }
-
-    .second-section {
-        display: flex;
-        width: 45%;
-        justify-content: right;
-        flex-direction: row;
     }
 
     .vine p {
