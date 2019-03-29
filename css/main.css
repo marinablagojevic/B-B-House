@@ -110,6 +110,7 @@ textarea {
     max-width: 1100px;
     margin: 0 auto;
     position: relative;
+    padding: 10px 10px;
 }
 
 body {
@@ -128,6 +129,7 @@ h2 {
     font-size: 30px;
     font-weight: 700;
     color: #172429;
+    margin: 30px 0;
 }
 
 h3 {
@@ -146,10 +148,7 @@ p {
 
 .header {
     background-color: #172429;
-}
-
-section {
-    margin-top: 50px;
+    overflow: hidden;
 }
 
 .cta, .book-button {
@@ -159,13 +158,13 @@ section {
     padding: 20px 25px;
     background-color:  #ee7463;
     border: none;
-    transition: 0.3s;  
+    transition: background 2s linear-gradient; 
 }
 
 .cta:hover, .book-button:hover, form button:hover {
-    background-image: linear-gradient(to right, rgba(252,148,73,1), rgba(238,116,99,1));
+    background-image: linear-gradient(45deg, rgba(252,148,73,1), rgba(238,116,99,1));
     cursor: pointer;
-    border: none;
+    border: none; 
 }
 
 .book-button {
@@ -177,12 +176,9 @@ section {
 /******************** HEADER ***********************/
 /*-----------------------------------------------*/
 
-.header, section {
-    padding: 0 20px;
-}
-
 .text {
-    padding-top: 160px;
+    padding-top: 100px;
+    margin: 20px auto 0;
 }
 
 .text p {
@@ -191,12 +187,12 @@ section {
 
 .header {
     height: 100%;
-    padding-top: 10px;
 }
 
 .logo {
     display: block;
     position: absolute;
+    top: 10px;
 }
 
 h1 {
@@ -205,15 +201,11 @@ h1 {
 }
 
 .cta {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    margin-top: 15px;
     width: 200px;
 }
 
 .text img {
-    margin: 100px 0 50px 0;
+    margin: 30px;
 }
 
 .header {
@@ -334,7 +326,7 @@ nav .close span:nth-child(2) {
 
 .room {
     position: relative;
-    margin-top: 20px;
+    /*margin-top: 20px;*/
 }
 
 .wrapper a {
@@ -362,10 +354,6 @@ nav .close span:nth-child(2) {
 /********************** GALLERY ***********************/
 /*-----------------------------------------------*/
 
-.gallery {
-    background-color: #ebebeb;
-    padding: 20px 10px;
-}
 
 .gallery ul {
     margin: 0;
@@ -392,6 +380,10 @@ nav .close span:nth-child(2) {
     transform: translate(-50%, -50%);
     height: auto;
     width: 100%;
+}
+
+.flexslider {
+    margin: 0;
 }
 
 .flexslider .slides > li {
@@ -480,7 +472,7 @@ nav .close span:nth-child(2) {
 .breakfast {
     background-color: #172429;
     color: white;
-    padding: 15px 10px;
+
 }
 
 .breakfast h2 {
@@ -488,7 +480,6 @@ nav .close span:nth-child(2) {
 }
 
 .breakfast p {
-    padding: 0 10px;
     max-width: 500px;
     margin: 0 auto;
 }
@@ -504,6 +495,7 @@ nav .close span:nth-child(2) {
     display: block;
     float: left;
     width: 50%;
+    overflow: hidden;
 }
 
 .breakfast .first-list li:nth-child(odd) {
@@ -517,6 +509,7 @@ nav .close span:nth-child(2) {
 .breakfast ul img {
     display: block;
     width: 100%;
+    transition: 0.3s;
 }
 
 .breakfast .second-list {
@@ -527,6 +520,7 @@ nav .close span:nth-child(2) {
     width: 100%;
     padding: 0;
     margin-bottom: 10px;
+    overflow: hidden;
 }
 
 .vine {
@@ -538,7 +532,6 @@ nav .close span:nth-child(2) {
     text-transform: uppercase;
     font-weight: 400;
     font-size: 25px;
-    margin-top: 30px;
 }
 
 .vine span {
@@ -561,12 +554,12 @@ nav .close span:nth-child(2) {
 }
 
 .things h2 {
-    margin: 20px 0 30px 0;
+   /* margin: 20px 0 30px 0;*/
 }
 
 .waterfall, .horse, .alpaca, .view {
-    margin-bottom: 40px;
-    padding: 20px;
+    margin-bottom: 30px;
+    padding: 10px;
 }
 
 .things h3 {
@@ -585,21 +578,35 @@ nav .close span:nth-child(2) {
 .something ul li {
     line-height: 25px;
     text-align: left;
-    padding-left: 8px;
 }
 
-/*.things img {
-    border: 5px solid white;
-    box-shadow: -1px -1px 33px -7px rgba(0,0,0,0.2);
-}*/
+.something ul {
+    padding-left: 18px;
+}
+
+.things .imgbox {
+    height: 0;
+    padding-bottom: 66%;
+    position: relative;
+    overflow: hidden;
+}
+
+.imgbox img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: 100%;
+}
+
+.alpaca .imgbox img {
+    transform: translate(-50%, -38%);
+}
 
 /*-----------------------------------------------*/
 /*************** INFO AND LOCATION ******************/
 /*-----------------------------------------------*/
-
-.info-loc div {
-    margin-top: 30px;
-}
 
 .info-loc p {
     text-align: left;
@@ -627,11 +634,6 @@ nav .close span:nth-child(2) {
     cursor: pointer;
 }
 
-.owners img {
-    border: 5px solid white;
-    box-shadow: -1px -1px 33px -7px rgba(0,0,0,0.2);
-}
-
 .owners p {
     text-align: center;
 }
@@ -647,7 +649,7 @@ nav .close span:nth-child(2) {
 iframe {
     width: 100%;
     margin: 10px 0 40px 0;
-    height: 450px;
+    height: 300px;
 }
 
 /*-----------------------------------------------*/
@@ -710,7 +712,6 @@ form button {
 footer {
     background-color:  #172429;
     margin-top: 30px;
-    padding-top: 20px;
 }
 
 .footerlogo {
@@ -778,10 +779,8 @@ footer {
         margin-left: 30px;
    }
 
-   .cta {
-        position: absolute;
-        left: 30px;
-        transform: translate(20px);
+   .text img {
+        margin: 40px;
    }
 
    .header {
@@ -823,11 +822,6 @@ footer {
 
     /**********BREAKFAST MENU**********/
 
-    .breakfast ul {
-        margin: 30px 0 10px 0;
-        padding: 0;
-    }
-
     .breakfast .first-list li {
         margin: 0 10px 10px 0;
         padding: 0;
@@ -863,27 +857,8 @@ footer {
         width: 100%; 
     }
 
-    .breakfast .second-list li  {
-        display: inline-block;
-        width: 31%;
-        padding: 0;
-        margin-right: 10px;
-        max-height: 114px;
-        overflow: hidden;
-        vertical-align: middle;
-    }
-
-    .breakfast .second-section .first-p:first-child {
-        float: right;
-        max-width: 68%;
-    }
-
-    .breakfast .second-list li:last-child {
-        margin-right: 0;
-    }
-
     .vine {
-        margin: 60px 0;
+        margin: 40px 0;
         display: block;
     }
 
@@ -938,10 +913,6 @@ footer {
 
     /**********GENERAL**********/
 
-    section, footer {
-        margin-top: 50px;
-    }
-
     h1 {
         font-size: 40px;
         margin-bottom: 10px;
@@ -967,31 +938,8 @@ footer {
 
     /**********BREAKFAST MENU**********/
 
-    .vine p {
-        margin-top: 15px;
-    }
-
     .first-p p {
         margin: 0 auto;
-    }
-
-    .breakfast .first-list li {
-        width: 23.5%;
-    }
-
-    .breakfast .second-list {
-        display: inline-block;
-        margin-top: 0;
-    }
-
-    .breakfast .second-list li  {
-        display: inline-block;
-        width: 32%;
-        padding: 0;
-        margin-right: 10px;
-        max-height: 126px;
-        overflow: hidden;
-        vertical-align: middle;
     }
 
     /**********INFO**********/
@@ -1037,13 +985,12 @@ footer {
         border: none;
     }
 
-    .footernav .navigation li a {
+    .footernav .navigation li {
         font-size: 14px;
-        color: #ee7463;
     }
 
     .footernav .navigation li a:hover {
-        color: #fc9449;
+        color: #ee7463;
     }
 
     .footerinfo {
@@ -1060,17 +1007,56 @@ footer {
         margin-right: 0;
     }
 
+    .breakfast ul {
+        margin: 40px 0 10px 0;
+    }
+
+    .breakfast .second-list li  {
+        display: inline-block;
+        width: 32%;
+        padding: 0;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+
+    .breakfast .second-list li {
+        height: 0;
+        padding-bottom: 18%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .breakfast .second-list li img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: auto;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    .breakfast .second-section .first-p:first-child {
+        float: right;
+        width: 68%;
+    }
+
+    .breakfast .second-list li:last-child {
+        margin-right: 0;
+    }
+
+    .breakfast .first-list img:hover {
+        transform: scale(1.2);
+    }
+
+    .breakfast .second-list img:hover {
+        transform: scale(1.2); 
+        top:0;
+        left: 0;
+    }
 }
 
 @media only screen and (min-width: 800px) {
-
-    .breakfast .second-list li {
-        max-height: 144px;
-    }
-
-    .breakfast .first-list li {
-        width: 23.6%;
-    }
 
     .vineflex {
         display: flex;
@@ -1097,17 +1083,6 @@ footer {
     }
 }
 
-@media only screen and (min-width: 900px) {
-
-    .breakfast .second-list li {
-        max-height: 169px;
-    }
-
-    .breakfast .first-list li {
-        width: 23.7%;
-    }
-}
-
 
 
 /*-----------------------------------------------*/
@@ -1119,21 +1094,21 @@ footer {
 /**********GENERAL**********/    
 
     .header, section {
+        padding: 0;
+    }
+
+    .header .container {
         padding: 0 60px;
+    }
+
+    .container {
+        padding: 30px 60px;
     }
 
 /**********HEADER**********/
 
     .logo {
         left: 15px;
-    }
-
-    .cta {
-        left: 70px;
-    }
-
-    .text img {
-        margin: 10px 0 100px 300px;
     }
 
     h1 {
@@ -1153,7 +1128,16 @@ footer {
 
     .text p {
         width: 500px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
+    }
+
+    .text {
+        margin-top: 0;
+        padding-top: 200px;
+    }
+
+    .text img {
+        margin: 30px 0 50px 80px;
     }
 
     .header {
@@ -1291,25 +1275,26 @@ footer {
     .navigation a {
         margin-right: 20px;
         font-size: 14px;
-        padding-bottom: 10px;
+        padding-bottom: 11px;
+        transition: 0.3s;
+        border-bottom: 1px solid rgba(238,116,99,0);
     }
 
     .navigation a:hover {
         cursor: pointer;
-        color: #FC9449;
-        transition: 0.3s;
-        border-bottom: 1px solid #FC9449;
+        color: #ee7463;
+        border-bottom: 1px solid #ee7463;
     }
 
     .navigation .btn {
         background-color: #ee7463;
         padding: 10px 15px;
         margin-right: 0;
+        transition: 0.5s;
     }
 
     .navigation .btn:hover {
-        background-color: #fc9449;
-        transition: 0.3s;
+        background-image: linear-gradient(45deg, rgba(252,148,73,1), rgba(238,116,99,1));
         cursor: pointer;
         color: white;
         border-bottom: none;
@@ -1324,7 +1309,18 @@ footer {
         font-size: 12px;
         width: 100%;
         padding: 8px 15px;
+    }
+
+    .info::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 5000px;
+        height: 100%;
         background-color: rgba(0, 0, 0, 0.3);
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .info li {
@@ -1339,8 +1335,8 @@ footer {
     }
 
     .navigation .active:hover {
-        color: #FC9449;
-        border-bottom: 1px solid #FC9449;
+        color: white;
+        border-bottom: 1px solid white;
     }   
 
     nav .close, .burger {
@@ -1359,9 +1355,15 @@ footer {
         margin-top: 15px;
     }
 
+    iframe {
+        max-width: 1100px;
+        margin: 0 auto;
+        position: relative;
+        padding: 10px 10px;
+        height: 450px;
+    }
+
 }
-
-
 
 /*
 FORME!
