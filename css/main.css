@@ -230,6 +230,10 @@ header nav {
     z-index: 99;
 }
 
+header nav.open {
+    display: block;
+}
+
 .navigation {
     display: block;
     text-align: center;
@@ -269,11 +273,11 @@ header nav {
 }
 
 nav .close {
-    width: 45px;
-    height: 45px;
+    width: 30px;
+    height: 63px;
     position: absolute;
     top: 10px;
-    right: 10px;
+    right: 22px;
     display: block;
     margin: 0;
     background-color: #172429;
@@ -281,8 +285,8 @@ nav .close {
 }
 
 nav .close span {
-    width: 30px;
-    height: 4px;
+    width: 40px;
+    height: 5px;
     background: #fff;
     display: block;
     transform: rotate(45deg);
@@ -291,7 +295,7 @@ nav .close span {
 nav .close span:nth-child(2) {
     transform: rotate(-45deg);
     position: relative;
-    top: -4px;
+    top: -5px;
 }
 
 .burger {
@@ -850,6 +854,7 @@ footer {
     .breakfast ul img {
         display: block;
         width: 100%;
+        transition: 0.3s;
     }
 
     .breakfast .second-list {
@@ -1033,7 +1038,6 @@ footer {
         transform: translate(-50%, -50%);
         height: auto;
         width: 100%;
-        transition: 0.3s;
     }
 
     .breakfast .second-section .first-p:first-child {
