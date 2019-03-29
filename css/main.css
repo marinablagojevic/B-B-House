@@ -98,11 +98,18 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
+/*-----------------------------------------------*/
 /************ GLOBAL styles ************/
+/*-----------------------------------------------*/
 
 * {
     box-sizing: border-box;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
 }
 
 body {
@@ -138,7 +145,6 @@ p {
 }
 
 .header {
-    max-width: 1500px;
     background-color: #172429;
 }
 
@@ -167,7 +173,9 @@ section {
    padding: 15px 20px; 
 }
 
+/*-----------------------------------------------*/
 /******************** HEADER ***********************/
+/*-----------------------------------------------*/
 
 .header, section {
     padding: 0 20px;
@@ -214,7 +222,9 @@ h1 {
     background-repeat: no-repeat;
 }
 
+/*-----------------------------------------------*/
 /*************** NAVIGATION *************/
+/*-----------------------------------------------*/
 
 header nav {
     display: none;
@@ -314,7 +324,9 @@ nav .close span:nth-child(2) {
     margin-top: 0;
 } 
 
+/*-----------------------------------------------*/
 /**************** ROOMS ***************/
+/*-----------------------------------------------*/
 
 .room-centered-text p span {
     font-weight: 700;
@@ -335,7 +347,7 @@ nav .close span:nth-child(2) {
 } 
 
 .wrapper h3 {
-    margin: 30px 0 10px 0;
+    margin: 30px 0 20px 0;
 }
 
 .wrapper h4 {
@@ -346,12 +358,9 @@ nav .close span:nth-child(2) {
     margin: 30px 0 10px 0;
 }
 
-.things img {
-    border: 5px solid white;
-    box-shadow: -1px -1px 33px -7px rgba(0,0,0,0.2);
-}
-
+/*-----------------------------------------------*/
 /********************** GALLERY ***********************/
+/*-----------------------------------------------*/
 
 .gallery {
     background-color: #ebebeb;
@@ -363,24 +372,46 @@ nav .close span:nth-child(2) {
     padding: 0;
 }
 
-.gallery button {
-    color: #494949;
-    font-weight: 700;
-    border: none;
-    border-bottom: 1px solid #494949;
-    padding: 10px 0;
-    background: transparent;
+.gallery .flex-control-nav li {
+    padding-bottom: 15.5%;
+    height: 0;
+    position: relative;
+    overflow: hidden;
 }
 
+
+.gallery .flex-control-nav li img {
+    height: 100%;
+    width: auto;
+}
+
+.gallery .flexslider li img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: 100%;
+}
+
+.flexslider .slides > li {
+    height: 0;
+    padding-bottom: 5%;
+    overflow: hidden;
+    position: relative;
+}
+/*-----------------------------------------------*/
 /**************** ABOUT US ***********************/
+/*-----------------------------------------------*/
 
 .about ul li {
     display: block;
     text-align: left;
-    margin: 10px 0 20px 0; 
+    margin: 10px 0 25px 0; 
     line-height: 22px;
     padding-left: 15px;
     position: relative;
+    max-width: 400px;
 }
 
 .wifi:before, .pet:before, .lang:before, .sauna:before,
@@ -442,7 +473,9 @@ nav .close span:nth-child(2) {
     background-image: url('../img/parking.png');
 }
 
+/*-----------------------------------------------*/
 /****************** BREAKFAST MENU *********************/
+/*-----------------------------------------------*/
 
 .breakfast {
     background-color: #172429;
@@ -455,7 +488,7 @@ nav .close span:nth-child(2) {
 }
 
 .breakfast p {
-    padding: 0 15px;
+    padding: 0 10px;
     max-width: 500px;
     margin: 0 auto;
 }
@@ -465,7 +498,7 @@ nav .close span:nth-child(2) {
     padding: 0;
 }
 
-.breakfast ul li {
+.breakfast .first-list li {
     margin: 0 0 10px;
     padding: 0;
     display: block;
@@ -493,6 +526,7 @@ nav .close span:nth-child(2) {
 .breakfast .second-list li  {
     width: 100%;
     padding: 0;
+    margin-bottom: 10px;
 }
 
 .vine {
@@ -504,6 +538,7 @@ nav .close span:nth-child(2) {
     text-transform: uppercase;
     font-weight: 400;
     font-size: 25px;
+    margin-top: 30px;
 }
 
 .vine span {
@@ -513,13 +548,17 @@ nav .close span:nth-child(2) {
 .vine p:first-of-type {
     margin-bottom: 30px;
     line-height: 24px;
-    padding-left: 15px;
     position: relative;
     margin-top: 30px;
 }
 
-
+/*-----------------------------------------------*/
 /****************THINGS TO DO*******************/
+/*-----------------------------------------------*/
+
+.things {
+    padding: 0;
+}
 
 .things h2 {
     margin: 20px 0 30px 0;
@@ -527,6 +566,7 @@ nav .close span:nth-child(2) {
 
 .waterfall, .horse, .alpaca, .view {
     margin-bottom: 40px;
+    padding: 20px;
 }
 
 .things h3 {
@@ -548,14 +588,22 @@ nav .close span:nth-child(2) {
     padding-left: 8px;
 }
 
+/*.things img {
+    border: 5px solid white;
+    box-shadow: -1px -1px 33px -7px rgba(0,0,0,0.2);
+}*/
+
+/*-----------------------------------------------*/
 /*************** INFO AND LOCATION ******************/
+/*-----------------------------------------------*/
 
 .info-loc div {
-    margin: 30px 50px 0 20px ;
+    margin-top: 30px;
 }
 
 .info-loc p {
     text-align: left;
+    max-width: 400px;
 }
 
 .info-loc p span {
@@ -602,8 +650,9 @@ iframe {
     height: 450px;
 }
 
+/*-----------------------------------------------*/
 /************************ FORM ******************/
-
+/*-----------------------------------------------*/
 
 form {
     margin: 0 auto;
@@ -654,7 +703,9 @@ form button {
     transition: 0.3s;
 }
 
+/*-----------------------------------------------*/
 /********************* FOOTER *******************/
+/*-----------------------------------------------*/
 
 footer {
     background-color:  #172429;
@@ -714,10 +765,13 @@ footer {
     margin-left: 0;
 }
 
+/*-----------------------------------------------*/
 /*********************MEDIA 640px**********************/
+/*-----------------------------------------------*/
 
 @media only screen and (min-width: 640px) {
 
+/**********HEADER**********/
    .text {
         text-align: left;
         width: 500px;
@@ -726,7 +780,7 @@ footer {
 
    .cta {
         position: absolute;
-        left: 20px;
+        left: 30px;
         transform: translate(20px);
    }
 
@@ -736,6 +790,8 @@ footer {
         background-repeat: no-repeat;
    }
 
+   /**********ROOMS**********/
+
    .room-centered-text {
         max-width: 540px;
         margin:0 auto;
@@ -743,7 +799,7 @@ footer {
 
     .wrapper .room {
         display: inline-block;
-        width: 46%;
+        width: 48%;
         vertical-align: top;
         margin-right: 20px;
     }
@@ -765,12 +821,85 @@ footer {
         box-shadow: -1px -1px 33px -7px rgba(0,0,0,0.2);
     }
 
-     .waterfall, .horse, .alpaca, .view{
+    /**********BREAKFAST MENU**********/
+
+    .breakfast ul {
+        margin: 30px 0 10px 0;
+        padding: 0;
+    }
+
+    .breakfast .first-list li {
+        margin: 0 10px 10px 0;
+        padding: 0;
+        display: inline-block;
+        float: none;
+        width: 23%;
+    }
+
+    .first-p {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .breakfast .first-list li:nth-child(4n+0) {
+        margin: 0 0 10px 0;
+    }
+
+    .breakfast .first-list li:nth-child(odd) {
+        padding-right: 0;
+    }
+
+    .breakfast .first-list li:nth-child(even) {
+        padding-left: 0;
+    }
+
+    .breakfast ul img {
+        display: block;
+        width: 100%;
+    }
+
+    .breakfast .second-list {
+        display:block;
+        width: 100%; 
+    }
+
+    .breakfast .second-list li  {
+        display: inline-block;
+        width: 31%;
+        padding: 0;
+        margin-right: 10px;
+        max-height: 114px;
+        overflow: hidden;
+        vertical-align: middle;
+    }
+
+    .breakfast .second-section .first-p:first-child {
+        float: right;
+        max-width: 68%;
+    }
+
+    .breakfast .second-list li:last-child {
+        margin-right: 0;
+    }
+
+    .vine {
+        margin: 60px 0;
+        display: block;
+    }
+
+    /**********TTD**********/
+
+    .waterfall, .horse, .alpaca, .view{
         display: inline-block;
         width: 45%;
         vertical-align: middle;
         position: relative;
         margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .things h3 {
+        margin: 20px 0 10px 0;
     }
 
     .something h3 {
@@ -781,13 +910,49 @@ footer {
     .something {
         width: 400px;
     }
+
+    .info-loc .inf {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .info-loc .inf p {
+        text-align: center;
+    }
+
+    .info-loc .inf div {
+        width: 30%;
+        max-width: 300px;
+    }
+
+    .info-loc .inf .folow {
+        width: 20%;
+    }
 }
 
+/*-----------------------------------------------*/
+/*********************MEDIA 700px**********************/
+/*-----------------------------------------------*/
+
 @media only screen and (min-width: 700px) {
+
+    /**********GENERAL**********/
 
     section, footer {
         margin-top: 50px;
     }
+
+    h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    hr {
+        width: 200px;
+        margin-bottom: 30px;
+    }
+
+    /**********ABOUT US**********/
 
     .about ul li {
         display: inline-block;
@@ -800,40 +965,47 @@ footer {
         margin-right: 70px;
     }
 
-    .breakfast .second-list li {
-        width: 30%;
-        margin-right: 10px;
-        position: static;
-        max-height: 210px;
-        overflow: hidden;
+    /**********BREAKFAST MENU**********/
+
+    .vine p {
+        margin-top: 15px;
     }
 
-    .info-loc .inf {
+    .first-p p {
         margin: 0 auto;
     }
 
-    .info-loc .inf div {
-        display: inline-block;
-        margin: 0px 10px;
-        width: 29%;
-        vertical-align: top;
-        position: relative;
-        left: 46px;
+    .breakfast .first-list li {
+        width: 23.5%;
     }
 
-    .folow p {
-        padding-right: 0;
+    .breakfast .second-list {
+        display: inline-block;
+        margin-top: 0;
     }
+
+    .breakfast .second-list li  {
+        display: inline-block;
+        width: 32%;
+        padding: 0;
+        margin-right: 10px;
+        max-height: 126px;
+        overflow: hidden;
+        vertical-align: middle;
+    }
+
+    /**********INFO**********/
 
     .owner-img {
         display: inline-block;
-        width: 36%;
+        width: 50%;
         float: left;
     }
 
     .owner-text {
         display: inline-block;
-        width: 46%;
+        width: 40%;
+        margin-left: 10px;
     }
 
     .owners {
@@ -843,6 +1015,9 @@ footer {
     .owner-text h3 {
        margin: 0 0 20px;
     }
+
+
+    /**********FOOTER**********/
 
     .footernav .navigation {
         padding-top: 10px;
@@ -885,20 +1060,100 @@ footer {
         margin-right: 0;
     }
 
-    .first-p p {
-        margin: 0 auto;
+}
+
+@media only screen and (min-width: 800px) {
+
+    .breakfast .second-list li {
+        max-height: 144px;
     }
 
-    .vine p {
-        margin-top: 15px;
+    .breakfast .first-list li {
+        width: 23.6%;
     }
 
+    .vineflex {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    .vineflex>div {
+        width: 60%;
+    }
+
+    .vineflex .first-p {
+        width: 37%;
+        margin-top: 0;
+    }
+
+    .vineflex .first-p p {
+        margin-top: 0;
+        text-align: left;
+    }
+
+    .vine h2 {
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+
+    .breakfast .second-list li {
+        max-height: 169px;
+    }
+
+    .breakfast .first-list li {
+        width: 23.7%;
+    }
 }
 
 
+
+/*-----------------------------------------------*/
+/*********************MEDIA 1040px**********************/
+/*-----------------------------------------------*/
+
 @media only screen and (min-width: 1040px) {
-    header, section {
-        padding: 0 50px;
+
+/**********GENERAL**********/    
+
+    .header, section {
+        padding: 0 60px;
+    }
+
+/**********HEADER**********/
+
+    .logo {
+        left: 15px;
+    }
+
+    .cta {
+        left: 70px;
+    }
+
+    .text img {
+        margin: 10px 0 100px 300px;
+    }
+
+    h1 {
+        font-size: 60px;
+        width: 1000px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    hr {
+        margin-bottom: 50px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .text p {
+        width: 500px;
+        margin-bottom: 40px;
     }
 
     .header {
@@ -907,6 +1162,8 @@ footer {
         background-repeat: no-repeat;
         background-position: right;
     }
+
+/**********ROOMS**********/
 
     .room img {
         display: none;
@@ -931,7 +1188,7 @@ footer {
         background-size: 400px auto;
         height: 250px;
         margin-right: 0;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
 
     .room1 {
@@ -964,7 +1221,7 @@ footer {
 
     .book-button {
         position: relative;
-        bottom: 41px;
+        bottom: 34px;
         left: 55px;
     }
 
@@ -975,12 +1232,29 @@ footer {
 
     .room p {
         min-height: auto;
-        max-width: 500px;
+        max-width: 450px;
     }
 
     .room h4 {
         padding-top: 20px;
         margin: 0;
+    }
+
+    .room-centered-text {
+        max-width: 600px;
+    }
+
+/**********ABOUT US**********/
+
+    .about ul li {
+        display: inline-block;
+        width: 50%;
+        vertical-align: middle;
+        position: relative;
+    }
+
+    .about ul li:nth-child(odd) {
+        margin-right: 70px;
     }
 
     header nav {
@@ -1077,15 +1351,14 @@ footer {
         top: 40px;
     }
 
-    .breakfast .second-list li:last-child {
-        margin-right: 0;
+    .breakfast .second-list li {
+        max-height: 190px;
     }
 
     .vine p {
         margin-top: 15px;
     }
 
-    
 }
 
 

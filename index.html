@@ -12,14 +12,16 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
+  <link rel="stylesheet" href="css/flexslider.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
+
   <header class="header" id="home">
-    <a href="index.html" class="logo"><img src="img/logo.png" alt="logo image Bed and Breakfast house">
+    <div class="container">
+      <a href="index.html" class="logo"><img src="img/logo.png" alt="logo image Bed and Breakfast house"></a>
 
     <nav>
 
@@ -33,11 +35,13 @@
         <li><a href="#info">Info &#38; Location</a></li>
         <li><a href="#book" class="btn">Book a room</a></li>
       </ul>
+
       <ul class="info unstyle-list">
         <li>Route de L’Hongrin, Switzerland</li>
         <li>+41 33 675 13 13</li>
         <li>B&B_House@gmail.com</li>
       </ul>
+
       <button class="close">
         <span></span>
         <span></span>
@@ -52,6 +56,7 @@
 
     <div class="text">
       <h1>Bed &#38; Breakfast House </h1>
+      <hr/>
       <p>Wake up rested. Breathe in the fresh air of pine trees. Treat yourself with a good old-fashion meal. Feel the taste of a home-made coffie and pastries. Take a walk. Breathe. Take it easy.
       <strong>Feel the vacation.</strong></p>
 
@@ -59,20 +64,23 @@
 
       <img src="img/pet.png" alt="pet frendly image">
     </div>
+    </div>
   </header>
 
    <!-- Rooms -->
   
-  <section class="rooms" id="rooms">
+<section class="rooms" id="rooms">
+
+<div class="container">
 
     <h2>Rooms</h2>
 
-<div class="room-centered-text">
-    <p>Our Bed & Breakfast House has to offer you four types of rooms for your perfect getawey from city. In our rooms you can relax and be in contact with natutre because every room has a beautiful view. Every room has it’s own bathroom.</p>
+  <div class="room-centered-text">
+    <p>Our <span>Bed & Breakfast House</span> has to offer you four types of rooms for your perfect getawey from city. In our rooms you can relax and be in contact with natutre because every room has a beautiful view. Every room has it’s own bathroom.</p>
 
     
       <p><span>Take a look at our offer and pick what is best for you and your loved ones.</span></p>
-</div> 
+  </div> 
 
   <div class="wrapper">
 
@@ -117,48 +125,45 @@
     </div>
   </div> 
 
-  <p>*Half of the price for children under the age of 8</p>
+    <p>*Half of the price for children under the age of 8</p>
+
+</div>
 </section>
 
    <!-- Gallery -->
 
   <section class="gallery" id="gallery">
+    <div class="container">
     <h2>Gallery</h2>
+<!-- Place somewhere in the <body> of your page -->
+    <div class="container">
+      <div class="flexslider">
+        <ul class="slides">
+          <li data-thumb="img/12.jpg">
+          <img src="img/12.jpg" />
+          </li>
+          <li data-thumb="img/7.jpg">
+          <img src="img/7.jpg" />
+          </li>
+          <li data-thumb="img/8.jpg">
+          <img src="img/8.jpg" />
+          </li>
+          <li data-thumb="img/9.jpg">
+          <img src="img/9.jpg" />
+          </li>
+        </ul>
+      </div>
+    </div>
 
-    <div class="flexslider">
-  <ul class="slides  unstyle-list">
-    <li data-thumb="slide1-thumb.jpg">
-      <img src="img/6-11.jpg" />
-    </li>
-  <!---  <li data-thumb="slide2-thumb.jpg">
-      <img src="img/7.jpg" />
-    </li>
-    <li data-thumb="slide3-thumb.jpg">
-      <img src="img/8.jpg" />
-    </li>
-    <li data-thumb="slide4-thumb.jpg">
-      <img src="img/9.jpg" />
-    </li>
-      <li data-thumb="slide2-thumb.jpg">
-      <img src="img/10.jpg" />
-    </li>
-    <li data-thumb="slide3-thumb.jpg">
-      <img src="img/6-11.jpg" />
-    </li>
-    <li data-thumb="slide4-thumb.jpg">
-      <img src="img/12.jpg" />
-    </li>--->
-  </ul>
-</div>
-     <!-- neki plug in *ne znam kako se to postavlja jos* -->
-
-     <!--<button>See more pictures</button>-->
+    </div>
 
   </section>
 
    <!-- About us -->
 
    <section class="about .clearfix" id="about-us">
+
+    <div class="container">
      <h2>About us</h2>
     
      <ul class="unstyle-list custom-list">
@@ -171,11 +176,13 @@
         <li class="salad">We grow our organic vegetables that we use for making breakfast.</li>
         <li class="parking">Parking.</li>
       </ul>
+    </div>
   </section>
 
   <!-- Breakfast menu -->
 
   <section class="breakfast" id="breakfast">
+    <div class="container">
 
     <h2>Breakfast menu</h2>
 
@@ -194,9 +201,10 @@
     </ul>
 
     <div class="second-section">
-       
+       <div  class="clearfix first-p">
           <p>Also we offer vegeterian and vegan food. 
-        Fruts and vegetables are home grown in our garden.</p>
+          Fruts and vegetables are home grown in our garden.</p>
+       </div> 
       
         <ul class="unstyle-list second-list clearfix">
           <li><img src="img/21.jpg" alt="fresh coffee"></li>
@@ -212,24 +220,31 @@
  <div class="vine">
       <h2>Try our fine vine</h2>
 
-      <div>
-        <img src="img/24.jpg" alt="vine glass with vine bottle and grapes">
-      </div>
-    <div class="first-p">
-      <p>We have some of the fine wines 
-    in our wine colection and you can try it too:<span>San Rustico Amarone della Valpolicella Classico 2011, Robert Mondavi Winery Pinot Noir Carneros Napa Valley Reserve 2014, Cafaggio Basilica del Cortaccio Cabernet Sauvignon Toscana 2013...</span></p>
+  <div>
 
-
-    <p>* Wines are not include in the regular menu</p>
+    <div class="vineflex">
+    <div>
+      <img src="img/24.jpg" alt="vine glass with vine bottle and grapes">
     </div>
 
+    <div class="first-p">
+        <p>We have some of the fine wines 
+      in our wine colection and you can try it too:<span>San Rustico Amarone della Valpolicella Classico 2011, Robert Mondavi Winery Pinot Noir Carneros Napa Valley Reserve 2014, Cafaggio Basilica del Cortaccio Cabernet Sauvignon Toscana 2013...</span></p>
 
+
+      <p>* Wines are not include in the regular menu</p>
+    </div>
+  </div>
+
+</div>
 </div>
   </section>
 
   <!-- Things to do -->
 
   <section class="things" id="ttd">
+
+    <div class="container">
     
     <h2>Things to do</h2>
 
@@ -276,11 +291,13 @@
         <li>Have a nice time</li>
       </ul>
     </div>
+  </div>
   </section>
 
     <!-- Info and location -->
 
   <section class="info-loc">
+    <div class="container">
     <h2>Info &#38; Location</h2>
     <div class="inf">
       <div>
@@ -304,14 +321,18 @@
         <a href="https://www.tripadvisor.com" target="_blank"><strong>Tripadviser</strong></a></p>
       </div>
     </div>
+  </div>
 </section>
 
 <section class="map">
+  <div class="container">
       <div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14005.66072952375!2d7.072450163375626!3d46.43010416877721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssr!2srs!4v1551981396939" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
+    </div>
 </section>
 <section>
+  <div class="container">
       <div class="owners clearfix">
         <div class="owner-img">
         <img src="img/29.jpg" alt="image of an owners older man and woman">
@@ -325,11 +346,13 @@
         <p>-Angela and Romeo Bern-</p>
       </div>
       </div>
+    </div>
  </section>
 
      <!-- Form -->
 
      <section class="form">
+      <div class="container">
        <h2 id="book">Book a Room</h2>
 
        <form>
@@ -366,11 +389,13 @@
          <button>Submit booking request
          </button>
        </form>
+     </div>
      </section>
 
      <!-- Footer -->
 
      <footer>
+      <div class="container">
       <div class="footerlogo">
        <a href="index.html"><img src="img/logo.png" alt="logo image bed and breakfast house"></a>
       </div>
@@ -403,7 +428,7 @@
       <p>&copy; All rights reserved,2019</p>
 
     </div>
-
+  </div>
 
   </footer>
 
