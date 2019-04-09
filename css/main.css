@@ -14,6 +14,7 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    scroll-behavior: smooth;
 }
 
 /*
@@ -147,7 +148,7 @@ p {
 }
 
 .header {
-    background-color: #172429;
+    background-color: #2c444e;
     overflow: hidden;
 }
 
@@ -158,13 +159,13 @@ p {
     padding: 20px 25px;
     background-color:  #ee7463;
     border: none;
-    transition: background 2s linear-gradient; 
+    transition: 0.4s; 
 }
 
 .cta:hover, .book-button:hover, form button:hover {
-    background-image: linear-gradient(45deg, rgba(252,148,73,1), rgba(238,116,99,1));
     cursor: pointer;
     border: none; 
+    background-color: #487080;
 }
 
 .book-button {
@@ -220,7 +221,7 @@ h1 {
 
 header nav {
     display: none;
-    background-color: #172429;
+    background-color: #2c444e;
     position: fixed;
     top: 0;
     overflow-x: scroll;
@@ -243,6 +244,7 @@ header nav.open {
 
 .navigation li {
      padding: 10px 0;
+     transition: 0.4s;
 }
 
 .navigation li:not(:last-child) {
@@ -255,8 +257,16 @@ header nav.open {
     line-height: 40px;
 }
 
+.navigation li:hover {
+    background-color: #445962;
+}
+
 .navigation li:last-child {
     background-color: #ee7463;
+}
+
+.navigation li:last-child:hover {
+    background-color: #487080;
 }
 
 .info {
@@ -280,7 +290,7 @@ nav .close {
     right: 22px;
     display: block;
     margin: 0;
-    background-color: #172429;
+    background-color: transparent;
     border: none;
 }
 
@@ -474,7 +484,7 @@ nav .close span:nth-child(2) {
 /*-----------------------------------------------*/
 
 .breakfast {
-    background-color: #172429;
+    background-color: #2c444e;
     color: white;
 
 }
@@ -634,7 +644,7 @@ nav .close span:nth-child(2) {
 }
 
 .info-loc a:hover {
-    color: #fc9449;
+    color: #487080;
     cursor: pointer;
 }
 
@@ -714,7 +724,7 @@ form button {
 /*-----------------------------------------------*/
 
 footer {
-    background-color:  #172429;
+    background-color:  #2c444e;
     margin-top: 30px;
 }
 
@@ -770,6 +780,78 @@ footer {
     margin-left: 0;
 }
 
+.footerinfo hr {
+    width: 100%;
+    margin: 0 0;
+    opacity: 0.3;
+}
+
+/* ======== Modal  ========== */
+
+.modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.6);
+    z-index: 1000;
+}
+.modal.open {
+    display: block;
+}
+.modal-wrap {
+    max-width: 870px;
+    width: 90%;
+    padding: 20px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 90%;
+    overflow-y: auto;
+}
+
+.modal-wrap > * {
+    display: inline-block;
+}
+.modal-wrap .close {
+    width: 30px;
+    height: 63px;
+    position: absolute;
+    top: 10px;
+    right: 22px;
+    display: block;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.modal-wrap .close span {
+    width: 40px;
+    height: 5px;
+    background: #f1e5d1;
+    display: block;
+    transform: rotate(45deg);
+}
+
+.modal-wrap .close span:nth-child(2) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -5px;
+}
+.modal-wrap h3 {
+    color: #f34949;
+    width: 100%;
+}
+.modal-inner {
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+
 /*-----------------------------------------------*/
 /*********************MEDIA 640px**********************/
 /*-----------------------------------------------*/
@@ -788,7 +870,7 @@ footer {
    }
 
    .header {
-        background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url(../img/1.jpg);
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.1)), url(../img/1.jpg);
         background-size: cover;
         background-repeat: no-repeat;
    }
@@ -1123,7 +1205,7 @@ footer {
     }
 
     hr {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     h2 {
@@ -1133,11 +1215,12 @@ footer {
     .text p {
         width: 500px;
         margin-bottom: 20px;
+        line-height: 25px;
     }
 
     .text {
         margin-top: 0;
-        padding-top: 200px;
+        padding-top: 160px;
     }
 
     .text img {
@@ -1145,7 +1228,7 @@ footer {
     }
 
     .header {
-        background-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.0)), url(../img/1.jpg);
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.0)), url(../img/1.jpg);
         background-size: 50%;
         background-repeat: no-repeat;
         background-position: right;
@@ -1245,6 +1328,8 @@ footer {
         margin-right: 70px;
     }
 
+    /**********header**********/
+
     header nav {
         display: inline-block;
         background-color: transparent;
@@ -1272,6 +1357,10 @@ footer {
         padding: 0;
     }
 
+    .navigation li:hover {
+    background-color: transparent;
+}
+
     .navigation li:not(:last-child) {
         border-bottom: none;
     }
@@ -1279,29 +1368,30 @@ footer {
     .navigation a {
         margin-right: 20px;
         font-size: 14px;
-        padding-bottom: 11px;
-        transition: 0.3s;
+        padding-bottom: 12px;
+        transition: 0.4s;
         border-bottom: 1px solid rgba(238,116,99,0);
     }
 
     .navigation a:hover {
         cursor: pointer;
-        color: #ee7463;
-        border-bottom: 1px solid #ee7463;
+        color: #fe9182;
+        border-bottom: 1px solid #fe9182;
     }
 
     .navigation .btn {
-        background-color: #ee7463;
-        padding: 10px 15px;
+        background-color: #fe9182;
+        padding: 14px 15px;
         margin-right: 0;
-        transition: 0.5s;
+        transition: 0.4s;
+        border: none;
     }
 
     .navigation .btn:hover {
-        background-image: linear-gradient(45deg, rgba(252,148,73,1), rgba(238,116,99,1));
+        background-color: #487080;
         cursor: pointer;
         color: white;
-        border-bottom: none;
+        border: none;
     }
 
     .info {
@@ -1334,8 +1424,8 @@ footer {
     }
 
     .navigation .active {
-        color: #ee7463;
-        border-bottom: 1px solid #ee7463;
+        color: #fe9182;
+        border-bottom: 1px solid #fe9182;
     }
 
     .navigation .active:hover {

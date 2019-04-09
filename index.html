@@ -60,7 +60,7 @@
       <p>Wake up rested. Breathe in the fresh air of pine trees. Treat yourself with a good old-fashion meal. Feel the taste of a home-made coffie and pastries. Take a walk. Breathe. Take it easy.
       <strong>Feel the vacation.</strong></p>
 
-      <button class="cta">Book a Room Now</button>
+      <a href="#book"><button class="cta">Book a Room Now</button></a>
 
       <img src="img/pet.png" alt="pet frendly image">
     </div>
@@ -303,7 +303,7 @@
 
     <!-- Info and location -->
 
-  <section class="info-loc">
+  <section class="info-loc" id="info">
     <div class="container">
     <h2>Info &#38; Location</h2>
     <div class="inf">
@@ -379,7 +379,7 @@
                   <option value="“View to Heaven”">View to Heaven</option>
                   <option value="“Royal Feeling”">Royal Feeling</option>
                 </select>
-           </select>
+           
            <label for="chin">Check in:</label>
            <input type="date" id="chin" name="check in">
            <label for="chout">Check out:</label>
@@ -409,13 +409,13 @@
 
     <nav class="footernav">
       <ul class="unstyle-list navigation">
-        <li><a href="#"> Home</a></li>
-        <li><a href="#">Rooms</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Breakfast Menu</a></li>
-        <li><a href="#">Things to do</a></li>
-        <li><a href="#">Info &#38; Location</a></li>
+        <li><a href="index.html"> Home</a></li>
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#breakfast">Breakfast Menu</a></li>
+        <li><a href="#ttd">Things to do</a></li>
+        <li><a href="#info">Info &#38; Location</a></li>
         <li><a href="#book">Book a room</a></li>
       </ul>
     </nav>
@@ -432,12 +432,61 @@
         <li>+41 33 675 13 13</li>
         <li>B&B_House@gmail.com</li>
       </ul>
+      <hr/>
 
       <p>&copy; All rights reserved,2019</p>
 
     </div>
 
   </footer>
+
+     <div class="modal">
+    <div class="modal-wrap text-center">
+      <div class="modal-inner">
+        <img src="img/logo.png" alt="bed and breakfast house logo">
+        <h2>Book a room</h2>
+        <form>
+          <fieldset>
+           <legend>Guest info</legend>
+           <input type="text" name="name" placeholder="First and last name">
+           <input type="number" name="phone" placeholder="Contact Phone">
+           <input type="e-mail" name="e-mail" placeholder="E-mail">
+           <textarea name="message" rows="5" cols="10" placeholder="Message (optional)"></textarea>
+         </fieldset>
+         <fieldset>
+           <legend>Booking Info</legend>
+           <label for="select">Select a room you would like to pick:</label>
+                <select id="select">
+                  <option value="none" selected="/">-</option>
+                  <option value="“Familly love”">Familly Love</option>
+                  <option value="“Romantic Paradise”">Romantic Paradise</option>
+                  <option value="“View to Heaven”">View to Heaven</option>
+                  <option value="“Royal Feeling”">Royal Feeling</option>
+                </select>
+           
+           <label for="chin">Check in:</label>
+           <input type="date" id="chin" name="check in">
+           <label for="chout">Check out:</label>
+           <input type="date" id="chout" name="check out">
+           <label for="adults">Adults (number between 1 and 5):</label>
+           <input type="number" 
+          id="adults" class="input" name="quantity" min="1" max="5">
+           <label for="children">Children (number between 0 and 5):</label>
+           <input type="number" id="children" class="input" name="quantity" min="0" max="5">
+           <label for="pets">Pets (number between 0 and 5):</label>
+           <input type="number" id="pets" class="input" name="quantity" min="0" max="5">
+         </fieldset>
+
+         <button>Submit booking request
+         </button>
+        </form>
+        <button class="close">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </div>
 
 
 
