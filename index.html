@@ -13,6 +13,7 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
   <link rel="stylesheet" href="css/flexslider.css">
+  <link href="path/to/lightbox.css" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -189,10 +190,10 @@
         <p>Granny’s kitchn made home-made pies with home-made cheese and kajmak. The home-made coffee is brewing and spread wonderfull smell with a warm pastries out in the dining room.</p>
     </div>
     <ul class="unstyle-list clearfix first-list">
-      <li><img src="img/13a.jpg" alt="some franch bread"></li>
-      <li><img src="img/14a.jpg" alt="home made bread"></li>
-      <li><img src="img/15a.jpg" alt="sunny side up egs"></li>
-      <li><img src="img/16a.jpg" alt="sandwitch"></li>
+      <li><a "img/img13.jpg" data-lightbox="roadtrip"><img src="img/13a.jpg" alt="some franch bread"></a></li>
+      <li><a "img/img14.jpg" data-lightbox="roadtrip"><img src="img/14a.jpg" alt="home made bread"></a></li>
+      <li><a "img/img15.jpg" data-lightbox="roadtrip"><img src="img/15a.jpg" alt="sunny side up egs"></a></li>
+      <li><a "img/img16.jpg" data-lightbox="roadtrip"><img src="img/16a.jpg" alt="sandwitch"></a></li>
       <li><img src="img/17a.jpg" alt="swis cheese image"></li>
       <li><img src="img/18a.jpg" alt="pancakes"></li>
       <li><img src="img/19a.jpg" alt="milk in glass next to sunflower"></li>
@@ -399,6 +400,8 @@
      </div>
      </section>
 
+     <a href="index.html" class="top"><img src="img/top.png"></a>
+
      <!-- Footer -->
 
      <footer>
@@ -508,6 +511,7 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+  <script src="path/to/lightbox.js"></script>
   <script src="js/main.js"></script>
 </body>
 

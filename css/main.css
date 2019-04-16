@@ -851,6 +851,10 @@ footer {
     margin: 0 auto;
 }
 
+.top {
+    display: none;
+}
+
 
 /*-----------------------------------------------*/
 /*********************MEDIA 640px**********************/
@@ -1140,6 +1144,13 @@ footer {
         top:0;
         left: 0;
     }
+
+    .top{
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    }
 }
 
 @media only screen and (min-width: 800px) {
@@ -1419,7 +1430,7 @@ footer {
 
     .info li {
         display: inline-block;
-        color: #aba294;
+        color: #ded0bc;
         margin-right: 20px;
     }
 
